@@ -1,197 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Engagements | InfraCore Advisory Group</title>
+<meta charset="UTF-8">
+<title>Engagements | InfraCore Advisory Group</title>
 
-  <!-- SEO + META -->
-  <meta name="description" content="Learn how InfraCore Advisory Group structures client engagements and advisory relationships.">
-  <meta property="og:title" content="Engagements | InfraCore Advisory Group">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.infracoreadvisorygroup.com/engagements.html">
+<meta name="description" content="Learn how InfraCore Advisory Group structures client engagements and advisory relationships.">
+<link rel="icon" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="favicon.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
-    body { background: #f4f7fb; color: #1f2937; line-height: 1.6; }
-
-    /* NAV */
-    nav {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav img { height: 40px; }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #334155;
-      font-weight: 500;
-      font-size: 15px;
-    }
-
-    /* HEADER */
-    .header {
-      background: linear-gradient(180deg, #eef2ff 0%, #f4f7fb 100%);
-      padding: 96px 20px;
-      text-align: center;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    .header h1 {
-      font-size: 44px;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 16px;
-    }
-    .header p {
-      font-size: 18px;
-      color: #475569;
-      max-width: 820px;
-      margin: 0 auto;
-    }
-
-    /* GRID */
-    .grid {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 96px 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 36px;
-    }
-
-    .card h2 {
-      font-size: 22px;
-      color: #0f172a;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      font-size: 16px;
-      color: #475569;
-    }
-
-    /* CTA BAND */
-    .cta-band {
-      background: #ffffff;
-      border-top: 1px solid #e5e7eb;
-      padding: 88px 20px;
-      text-align: center;
-    }
-
-    .cta-band h2 {
-      font-size: 32px;
-      color: #0f172a;
-      margin-bottom: 16px;
-    }
-
-    .cta-band p {
-      font-size: 17px;
-      color: #475569;
-      max-width: 720px;
-      margin: 0 auto 32px;
-    }
-
-    .cta {
-      background: #2563eb;
-      color: #ffffff;
-      padding: 16px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      display: inline-block;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media (min-width: 900px) {
-      nav { padding: 20px 80px; }
-      .grid { grid-template-columns: repeat(3, 1fr); }
-    }
-  </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#f4f7fb;color:#1f2937}
+nav{background:#fff;border-bottom:1px solid #e5e7eb;padding:20px 80px;display:flex;justify-content:space-between;align-items:center}
+nav img{height:40px}
+nav a{margin-left:24px;text-decoration:none;color:#334155}
+.header{background:linear-gradient(180deg,#eef2ff,#f4f7fb);padding:120px 20px;text-align:center}
+.header h1{font-size:44px;color:#0f172a}
+.header p{font-size:18px;color:#475569;max-width:820px;margin:16px auto 0}
+.grid{max-width:1100px;margin:0 auto;padding:96px 20px;display:grid;gap:28px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:36px}
+.card h2{font-size:22px;color:#0f172a;margin-bottom:10px}
+.card p{color:#475569;font-size:16px}
+.cta-band{background:#fff;border-top:1px solid #e5e7eb;padding:88px 20px;text-align:center}
+.cta-band h2{font-size:32px;color:#0f172a;margin-bottom:16px}
+.cta-band p{font-size:17px;color:#475569;max-width:720px;margin:0 auto 32px}
+.cta{background:#2563eb;color:#fff;padding:16px 32px;border-radius:8px;text-decoration:none;font-weight:600}
+footer{background:#0f172a;color:#e5e7eb;padding:40px 20px;text-align:center;font-size:14px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+</style>
 </head>
 
 <body>
 
 <nav>
-  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
-  <div>
-    <a href="/">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="engagements.html">Engagements</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
+<div>
+<a href="/">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="engagements.html">Engagements</a>
+<a href="contact.html">Contact</a>
+</div>
 </nav>
 
 <section class="header">
-  <h1>Client Engagements</h1>
-  <p>
-    Our engagements are structured to reflect the level of advisory involvement,
-    complexity, and support required for each business.
-  </p>
+<h1>Client Engagements</h1>
+<p>
+Our engagements are structured to reflect the level of advisory involvement,
+complexity, and ongoing support required.
+</p>
 </section>
 
 <section class="grid">
-  <div class="card">
-    <h2>Foundational Engagements</h2>
-    <p>
-      Designed for new businesses or owners who need structure, financial clarity,
-      and proper positioning established from the start.
-    </p>
-  </div>
 
-  <div class="card">
-    <h2>Ongoing Advisory Relationships</h2>
-    <p>
-      Monthly engagements focused on bookkeeping, advisory support, and year-round
-      clarity for established businesses.
-    </p>
-  </div>
+<div class="card">
+<h2>Foundational Engagements</h2>
+<p>
+Short-term engagements designed to establish structure, clarity, and direction
+for new or transitioning businesses.
+</p>
+</div>
 
-  <div class="card">
-    <h2>Tax & Compliance Engagements</h2>
-    <p>
-      Business and individual tax preparation paired with planning conversations
-      to support compliance and informed decision-making.
-    </p>
-  </div>
+<div class="card">
+<h2>Ongoing Advisory Relationships</h2>
+<p>
+Recurring engagements focused on ongoing financial organization, advisory
+availability, and strategic support.
+</p>
+</div>
+
+<div class="card">
+<h2>Tax & Compliance Engagements</h2>
+<p>
+Engagements centered on annual filings, compliance oversight, and tax-related
+decision support.
+</p>
+</div>
+
 </section>
 
 <section class="cta-band">
-  <h2>How Engagements Are Determined</h2>
-  <p>
-    Engagement structure is discussed after an initial conversation and is based on
-    business complexity, scope of services, and advisory depth.
-  </p>
-  <a class="cta" href="contact.html">Request a Consultation</a>
+<h2>How Engagements Are Established</h2>
+<p>
+Engagement structure is determined after an initial consultation and reflects
+scope, complexity, and advisory depth.
+</p>
+<a class="cta" href="contact.html">Request a Consultation</a>
 </section>
 
 <footer>
-  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
-  Serving entrepreneurs and small businesses nationwide
+Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
+Serving entrepreneurs and small businesses nationwide
 </footer>
 
 </body>
