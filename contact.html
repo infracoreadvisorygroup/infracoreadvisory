@@ -2,104 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Client Intake | InfraCore Advisory Group</title>
+  <title>Contact | InfraCore Advisory Group</title>
+
+  <!-- SEO + SOCIAL META -->
+  <meta name="description" content="Contact InfraCore Advisory Group to start a conversation about your business needs.">
+  <meta property="og:title" content="Contact | InfraCore Advisory Group">
+  <meta property="og:description" content="Client intake and contact information.">
+  <meta property="og:url" content="https://www.infracoreadvisorygroup.com/contact.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="favicon.png" type="image/png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: #ffffff;
-      color: #1f2937;
-      line-height: 1.6;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #ffffff; color: #1f2937; line-height: 1.6; }
 
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 20px;
-      border-bottom: 1px solid #e5e7eb;
-      background: #ffffff;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 20px; border-bottom: 1px solid #e5e7eb;
     }
+    nav img { height: 32px; }
+    nav a { margin-left: 18px; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 15px; }
 
-    nav img {
-      height: 32px;
-    }
-
-    nav a {
-      margin-left: 18px;
-      text-decoration: none;
-      color: #1f2937;
-      font-weight: 500;
-      font-size: 15px;
-    }
-
-    .hero {
-      padding: 64px 20px;
+    .page-header {
       background: #f8fafc;
+      padding: 64px 20px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
     section {
+      padding: 48px 20px;
       max-width: 720px;
       margin: 0 auto;
-      padding: 48px 20px;
     }
 
-    p {
-      font-size: 16px;
-      color: #374151;
-      margin-bottom: 24px;
-    }
-
-    label {
-      font-size: 14px;
-      font-weight: 600;
-      display: block;
-      margin-bottom: 6px;
-    }
-
+    label { font-size: 14px; font-weight: 600; display: block; margin-bottom: 6px; }
     input, textarea, select {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-size: 15px;
-      margin-bottom: 20px;
-    }
-
-    textarea {
-      min-height: 120px;
+      width: 100%; padding: 12px 14px; margin-bottom: 20px;
+      border: 1px solid #d1d5db; border-radius: 6px; font-size: 15px;
     }
 
     button {
-      background: #2563eb;
-      color: #ffffff;
-      border: none;
-      padding: 14px 20px;
-      font-size: 15px;
-      font-weight: 600;
-      border-radius: 6px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    button:hover {
-      background: #1d4ed8;
+      width: 100%; background: #2563eb; color: #ffffff;
+      border: none; padding: 14px; border-radius: 6px;
+      font-size: 15px; font-weight: 600; cursor: pointer;
     }
 
     footer {
@@ -109,20 +59,6 @@
       font-size: 14px;
       text-align: center;
       border-top: 1px solid #e5e7eb;
-    }
-
-    @media (min-width: 900px) {
-      nav {
-        padding: 18px 80px;
-      }
-
-      .hero h1 {
-        font-size: 42px;
-      }
-
-      section {
-        padding: 80px 20px;
-      }
     }
   </style>
 </head>
@@ -139,48 +75,36 @@
   </div>
 </nav>
 
-<div class="hero">
+<div class="page-header">
   <h1>Client Intake</h1>
 </div>
 
 <section>
-  <p>
-    Tell us about yourself and your business. Your submission is sent directly to
-    <strong>contact@infracoreadvisorygroup.com</strong>.
-  </p>
-
-  <!-- FORMSPREE FORM -->
   <form action="https://formspree.io/f/xwvnkakl" method="POST">
+    <input type="hidden" name="_redirect" value="https://www.infracoreadvisorygroup.com/thank-you.html">
 
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
+    <label>Full Name</label>
+    <input type="text" name="name" required>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
+    <label>Email Address</label>
+    <input type="email" name="email" required>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone">
+    <label>Phone Number</label>
+    <input type="tel" name="phone">
 
-    <label for="business">Business Name</label>
-    <input type="text" id="business" name="business">
+    <label>Business Name</label>
+    <input type="text" name="business">
 
-    <label for="stage">Business Stage</label>
-    <select id="stage" name="stage">
-      <option>Idea / Not Started</option>
-      <option>New Business</option>
-      <option>Established Business</option>
-      <option>Growing / Scaling</option>
-    </select>
-
-    <label for="message">How can we help?</label>
-    <textarea id="message" name="message"></textarea>
+    <label>How can we help?</label>
+    <textarea name="message"></textarea>
 
     <button type="submit">Submit Intake</button>
   </form>
 </section>
 
 <footer>
-  InfraCore Advisory Group • contact@infracoreadvisorygroup.com
+  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
+  Serving entrepreneurs and small businesses nationwide
 </footer>
 
 </body>
