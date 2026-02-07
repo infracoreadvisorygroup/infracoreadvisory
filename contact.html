@@ -2,42 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | InfraCore Advisory Group</title>
+  <title>Client Intake | InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #ffffff; color: #0a1e3c; line-height: 1.6; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #0a1e3c;
+      line-height: 1.6;
+    }
 
     nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 16px 20px; border-bottom: 1px solid #e5e7eb; background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid #e5e7eb;
+      background: #ffffff;
     }
-    nav img { height: 34px; }
-    nav a { margin-left: 20px; text-decoration: none; color: #0a1e3c; font-weight: 500; font-size: 15px; }
+
+    nav img {
+      height: 34px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0a1e3c;
+      font-weight: 500;
+      font-size: 15px;
+    }
 
     .hero {
-      padding: 56px 20px; background: #0a1e3c; color: #ffffff;
+      padding: 56px 20px;
+      background: #0a1e3c;
+      color: #ffffff;
     }
-    .hero h1 { font-size: 32px; font-weight: 700; max-width: 700px; }
 
-    .image-section img { width: 100%; display: block; }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      max-width: 700px;
+    }
 
-    section { padding: 48px 20px; }
-    p { font-size: 17px; color: #1f2937; max-width: 720px; margin-bottom: 16px; }
+    section {
+      padding: 48px 20px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 17px;
+      color: #1f2937;
+      margin-bottom: 24px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background: #0a1e3c;
+      color: #ffffff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #1f4fd8;
+    }
 
     footer {
-      background: #0a1e3c; color: #ffffff; padding: 32px 20px; font-size: 14px;
+      background: #0a1e3c;
+      color: #ffffff;
+      padding: 32px 20px;
+      font-size: 14px;
+      margin-top: 48px;
     }
 
     @media (min-width: 900px) {
-      nav { padding: 20px 80px; }
-      .hero { padding: 90px 80px; }
-      .hero h1 { font-size: 46px; }
-      section { padding: 80px; }
-      .image-section img { max-height: 420px; object-fit: cover; }
+      nav {
+        padding: 20px 80px;
+      }
+
+      .hero {
+        padding: 90px 80px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
     }
   </style>
 </head>
@@ -55,26 +144,51 @@
 </nav>
 
 <div class="hero">
-  <h1>Start the Conversation</h1>
-</div>
-
-<div class="image-section">
-  <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80" alt="Professional meeting">
+  <h1>Client Intake</h1>
 </div>
 
 <section>
   <p>
-    If you have an idea, a growing business, or need clarity around your finances,
-    we invite you to reach out.
+    Use the form below to tell us about yourself, your business, and what kind of
+    support you’re looking for. This helps us prepare before reaching out.
   </p>
-  <p>
-    Email us at:<br>
-    <strong>contact@infracoreadvisorygroup.com</strong>
-  </p>
+
+  <form action="mailto:contact@infracoreadvisorygroup.com" method="post" enctype="text/plain">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="Full Name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="Phone">
+
+    <label for="business">Business Name (if applicable)</label>
+    <input type="text" id="business" name="Business Name">
+
+    <label for="stage">Where are you in your business journey?</label>
+    <select id="stage" name="Business Stage">
+      <option value="">Select one</option>
+      <option>Idea / Not Started</option>
+      <option>New Business (under 1 year)</option>
+      <option>Established Business</option>
+      <option>Growing / Scaling</option>
+    </select>
+
+    <label for="services">What support are you looking for?</label>
+    <textarea id="services" name="Services Needed"
+      placeholder="Examples: business setup, bookkeeping, taxes, planning, funding guidance..."></textarea>
+
+    <label for="notes">Anything else we should know?</label>
+    <textarea id="notes" name="Additional Notes"></textarea>
+
+    <button type="submit">Submit Intake Form</button>
+  </form>
 </section>
 
 <footer>
-  InfraCore Advisory Group
+  InfraCore Advisory Group • contact@infracoreadvisorygroup.com
 </footer>
 
 </body>
