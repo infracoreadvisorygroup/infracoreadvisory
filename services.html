@@ -4,12 +4,49 @@
   <meta charset="UTF-8">
   <title>Services | InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #ffffff; color: #0a1e3c; line-height: 1.6; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 20px; border-bottom: 1px solid #e5e7eb; background: #ffffff;
+    }
+    nav img { height: 34px; }
+    nav a { margin-left: 20px; text-decoration: none; color: #0a1e3c; font-weight: 500; font-size: 15px; }
+
+    .hero {
+      padding: 56px 20px; background: #0a1e3c; color: #ffffff;
+    }
+    .hero h1 { font-size: 32px; font-weight: 700; max-width: 700px; }
+
+    .image-section img { width: 100%; display: block; }
+
+    section { padding: 48px 20px; }
+    h2 { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+    p { font-size: 17px; color: #1f2937; max-width: 720px; margin-bottom: 24px; }
+
+    footer {
+      background: #0a1e3c; color: #ffffff; padding: 32px 20px; font-size: 14px;
+    }
+
+    @media (min-width: 900px) {
+      nav { padding: 20px 80px; }
+      .hero { padding: 90px 80px; }
+      .hero h1 { font-size: 46px; }
+      section { padding: 80px; }
+      .image-section img { max-height: 420px; object-fit: cover; }
+    }
+  </style>
 </head>
+
 <body>
 
 <nav>
-  <img src="assets/images/logo.png" alt="InfraCore Advisory Group">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
   <div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -18,31 +55,32 @@
   </div>
 </nav>
 
+<div class="hero">
+  <h1>What We Do</h1>
+</div>
+
+<div class="image-section">
+  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80" alt="Business planning">
+</div>
+
 <section>
-  <h2>Our Services</h2>
+  <h2>Idea to Business Advisory</h2>
+  <p>Helping turn business ideas into structured, legitimate operations.</p>
 
-  <p><strong>Idea to Business Advisory</strong><br>
-  We help transform business ideas into legitimate, structured operations by
-  guiding planning, setup decisions, and early financial organization.</p>
+  <h2>Bookkeeping & Financial Organization</h2>
+  <p>Organized financials that provide clarity, accuracy, and insight.</p>
 
-  <p><strong>Bookkeeping & Financial Organization</strong><br>
-  We provide ongoing bookkeeping and financial organization so business owners
-  understand performance, cash flow, and financial position.</p>
+  <h2>Business Growth & Goal Planning</h2>
+  <p>Strategic planning for growth without managing daily operations.</p>
 
-  <p><strong>Business Growth & Goal Planning</strong><br>
-  We help clients set realistic goals, evaluate opportunities, and plan next
-  steps — without managing daily operations.</p>
+  <h2>Tax Preparation & Advisory</h2>
+  <p>Federal and state tax preparation with guidance on tax-aware decisions.</p>
 
-  <p><strong>Tax Preparation & Advisory</strong><br>
-  We prepare federal and state tax returns and provide guidance on tax-aware
-  business decisions, including quarterly vs annual payment planning.</p>
-
-  <p><strong>Funding & Paperwork Support</strong><br>
-  We assist clients in navigating grants, loans, and administrative paperwork
-  by organizing financial information and clarifying requirements.</p>
+  <h2>Funding & Paperwork Support</h2>
+  <p>Support navigating grants, loans, and administrative requirements.</p>
 </section>
 
-<footer class="footer">
+<footer>
   Advisory-Led • Structured • Intentional
 </footer>
 
