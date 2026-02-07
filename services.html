@@ -2,84 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Advisory Services | InfraCore Advisory Group</title>
+  <title>Services | InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: #0f172a;
       background: #ffffff;
       line-height: 1.6;
     }
+
     nav {
-      background:#0f172a;
-      padding:18px 30px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
+      background: #0f172a;
+      padding: 18px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     nav a {
-      color:white;
-      margin-left:18px;
-      text-decoration:none;
-      font-weight:600;
-      font-size:15px;
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
     }
+
     .container {
-      max-width:1100px;
-      margin:70px auto;
-      padding:0 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 90px 24px;
     }
+
     h1 {
-      font-size:40px;
-      margin-bottom:15px;
+      font-size: 46px;
+      margin-bottom: 24px;
+      font-weight: 700;
     }
+
     h2 {
-      margin-top:70px;
-      font-size:28px;
+      font-size: 32px;
+      margin-top: 90px;
+      font-weight: 600;
     }
-    p.lead {
-      font-size:19px;
-      max-width:850px;
-      margin-bottom:30px;
+
+    h3 {
+      font-size: 20px;
+      margin-top: 0;
+      font-weight: 600;
     }
-    .cta {
-      display:inline-block;
-      background:#2563eb;
-      color:white;
-      padding:14px 28px;
-      text-decoration:none;
-      border-radius:6px;
-      font-weight:600;
+
+    p {
+      font-size: 17px;
+      color: #1e293b;
     }
+
+    .lead {
+      font-size: 20px;
+      max-width: 900px;
+    }
+
+    .subtle {
+      color: #475569;
+      font-size: 16px;
+      max-width: 880px;
+      margin-top: 16px;
+    }
+
+    .section-soft {
+      background: #f8fafc;
+    }
+
     .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-      gap:24px;
-      margin-top:40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
     }
+
     .card {
-      border:1px solid #e2e8f0;
-      border-radius:10px;
-      padding:28px;
-      background:#ffffff;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 34px;
     }
-    .card h3 {
-      margin-top:0;
-      margin-bottom:10px;
-      font-size:20px;
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
-    .card p {
-      font-size:16px;
-      margin-bottom:0;
-    }
+
     footer {
-      margin-top:100px;
-      padding:30px 20px;
-      background:#f1f5f9;
-      font-size:14px;
-      color:#334155;
+      background: #f1f5f9;
+      padding: 48px 24px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    footer p {
+      max-width: 1200px;
+      margin: auto;
     }
   </style>
 </head>
@@ -87,100 +117,161 @@
 <body>
 
 <nav>
-  <div style="color:white;font-size:20px;font-weight:700;">InfraCore Advisory Group</div>
+  <div style="color:white;font-size:20px;font-weight:700;">
+    InfraCore Advisory Group
+  </div>
   <div>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="process.html">Process</a>
-    <a href="pricing.html">Engagements</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
+<!-- HEADER -->
 <div class="container">
+  <h1>Advisory & Support Services</h1>
 
-  <h1>Advisory Services</h1>
   <p class="lead">
-    We help business owners design, build, and operate businesses with strong
-    financial and operational infrastructure. Our advisory services focus on
-    execution, clarity, and long-term sustainability.
+    Our services are designed to support businesses and individuals through
+    planning, execution, and ongoing financial clarity. We focus on building
+    strong foundations rather than delivering one-off or transactional work.
   </p>
 
-  <a href="contact.html" class="cta">Request an Advisory Consultation</a>
+  <p class="subtle">
+    Engagements are structured based on scope, complexity, and long-term needs,
+    allowing our clients to grow with confidence and consistency.
+  </p>
+</div>
 
-  <!-- Strategic Advisory -->
-  <h2>Strategic Advisory</h2>
+<!-- STRATEGIC ADVISORY -->
+<div class="section-soft">
+  <div class="container">
+
+    <div class="eyebrow">Advisory</div>
+    <h2>Strategic Advisory Services</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Business Planning & Strategy</h3>
+        <p>
+          Development of business plans, financial projections, pricing models,
+          and execution roadmaps that align operational goals with financial reality.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Growth & Structural Advisory</h3>
+        <p>
+          Advisory support for businesses navigating expansion, restructuring,
+          formalization, or operational complexity.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Financial Insight & Decision Support</h3>
+        <p>
+          Ongoing analysis and guidance to support informed decision-making
+          through reliable financial data and reporting frameworks.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- OPERATIONAL SUPPORT -->
+<div class="container">
+  <div class="eyebrow">Operations</div>
+  <h2>Operational & Financial Support</h2>
 
   <div class="grid">
     <div class="card">
-      <h3>Business Planning & Strategy</h3>
+      <h3>Accounting System & Workflow Design</h3>
       <p>
-        Transform ideas into executable business plans with structured financial
-        modeling, pricing strategy, and growth roadmaps.
+        Setup and optimization of accounting systems, bookkeeping workflows,
+        and reporting structures that support clarity and compliance.
       </p>
     </div>
 
     <div class="card">
-      <h3>Operational Infrastructure Design</h3>
+      <h3>Ongoing Bookkeeping & Reporting</h3>
       <p>
-        Build systems that support scale — including workflows, financial
-        tracking structures, and operational processes.
+        Consistent bookkeeping, reconciliations, and financial reporting designed
+        to support advisory insight and long-term planning.
       </p>
     </div>
 
     <div class="card">
-      <h3>Financial Structure & Reporting</h3>
+      <h3>Operational Documentation & Processes</h3>
       <p>
-        Design reporting frameworks that give clarity into performance, margins,
-        and decision-making metrics.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Tax Strategy Alignment</h3>
-      <p>
-        Ensure tax planning aligns with business structure and financial goals,
-        supporting compliance and long-term efficiency.
+        Documentation and refinement of financial and operational processes to
+        support consistency, scalability, and internal clarity.
       </p>
     </div>
   </div>
+</div>
 
-  <!-- Business Enablement -->
-  <h2>Business Enablement</h2>
+<!-- TAX SERVICES -->
+<div class="section-soft">
+  <div class="container">
 
-  <div class="grid">
-    <div class="card">
-      <h3>Startup & Entity Formation Guidance</h3>
-      <p>
-        Guidance through business formation, compliance setup, and early-stage
-        operational decisions.
-      </p>
+    <div class="eyebrow">Tax Services</div>
+    <h2>Tax Preparation & Ongoing Support</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Business Tax Preparation</h3>
+        <p>
+          Preparation and filing of business tax returns with ongoing support
+          aligned to financial structure and operational planning.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Personal Tax Preparation</h3>
+        <p>
+          Personal tax preparation services provided with an understanding of
+          broader financial and business considerations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Year-Round Tax Guidance</h3>
+        <p>
+          Ongoing tax support and planning considerations to reduce surprises
+          and improve long-term alignment.
+        </p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Bookkeeping & Financial Workflows</h3>
-      <p>
-        Establish consistent bookkeeping and financial workflows that support
-        reporting accuracy and advisory insight.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Ongoing Advisory Support</h3>
-      <p>
-        Continuous advisory conversations, performance reviews, and financial
-        guidance as your business evolves.
-      </p>
-    </div>
   </div>
+</div>
 
+<!-- NEXT STEPS -->
+<div class="container">
+  <div class="eyebrow">Engagement</div>
+  <h2>How Engagements Begin</h2>
+
+  <p style="max-width:900px;">
+    Services begin with a conversation to understand goals, complexity, and
+    alignment. From there, support is structured to meet both immediate and
+    long-term needs.
+  </p>
+
+  <p>
+    <a href="contact.html" style="color:#2563eb;font-weight:600;text-decoration:none;">
+      Contact InfraCore Advisory Group →
+    </a>
+  </p>
 </div>
 
 <footer>
-  InfraCore Advisory Group provides business planning, advisory, bookkeeping,
-  and business tax preparation services. Legal advice, CPA services, audits,
-  and personal tax preparation are not provided.
+  <p>
+    © InfraCore Advisory Group. Advisory, operational support, bookkeeping,
+    and tax services for businesses and individuals.
+  </p>
 </footer>
 
 </body>
