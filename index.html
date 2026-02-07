@@ -44,37 +44,39 @@
       font-size: 15px;
     }
 
-    /* HERO (TEXT FIRST, IMAGE AFTER) */
+    /* HERO — LOGO FIRST */
     .hero {
-      padding: 56px 20px;
+      padding: 72px 20px;
       background: #0a1e3c;
       color: #ffffff;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 220px;
+      width: 100%;
+      margin-bottom: 28px;
     }
 
     .hero h1 {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 700;
       line-height: 1.25;
-      max-width: 700px;
+      margin-bottom: 18px;
     }
 
     .hero p {
-      margin-top: 16px;
       font-size: 17px;
       color: #e5e7eb;
       max-width: 720px;
+      margin: 0 auto;
     }
 
-    /* IMAGE SECTIONS */
-    .image-section img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* CONTENT SECTIONS */
+    /* CONTENT */
     section {
       padding: 48px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     section h2 {
@@ -86,8 +88,20 @@
     section p {
       font-size: 17px;
       color: #1f2937;
-      max-width: 720px;
       margin-bottom: 16px;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 28px;
+      display: inline-block;
+      background: #1f4fd8;
+      color: #ffffff;
+      padding: 14px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
     }
 
     /* FOOTER */
@@ -96,6 +110,7 @@
       color: #ffffff;
       padding: 32px 20px;
       font-size: 14px;
+      text-align: center;
     }
 
     /* DESKTOP */
@@ -105,24 +120,23 @@
       }
 
       .hero {
-        padding: 90px 80px;
+        padding: 120px 80px;
+      }
+
+      .hero img {
+        max-width: 280px;
       }
 
       .hero h1 {
-        font-size: 46px;
+        font-size: 44px;
       }
 
       section {
-        padding: 80px;
+        padding: 80px 20px;
       }
 
       section h2 {
         font-size: 34px;
-      }
-
-      .image-section img {
-        max-height: 420px;
-        object-fit: cover;
       }
     }
   </style>
@@ -140,19 +154,18 @@
   </div>
 </nav>
 
-<!-- HERO TEXT -->
 <div class="hero">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group Logo">
+
   <h1>From Concept to Clarity.<br>From Business to Growth.</h1>
+
   <p>
     InfraCore Advisory Group helps entrepreneurs and business owners turn ideas
     into structured businesses, organize finances, prepare taxes, and plan
     sustainable growth — without running their business for them.
   </p>
-</div>
 
-<!-- IMAGE BREAK -->
-<div class="image-section">
-  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80" alt="Business advisory planning">
+  <a class="cta" href="contact.html">Start the Conversation</a>
 </div>
 
 <section>
@@ -164,20 +177,6 @@
   </p>
   <p>
     You stay in control. We provide structure, insight, and direction.
-  </p>
-</section>
-
-<!-- IMAGE BREAK -->
-<div class="image-section">
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Professional financial discussion">
-</div>
-
-<section>
-  <h2>Built for Growth, Backed by Experience</h2>
-  <p>
-    Whether you are starting with an idea or managing an existing business,
-    we help bring order to finances, clarity to decisions, and confidence to
-    your next steps.
   </p>
 </section>
 
