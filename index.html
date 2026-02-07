@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>InfraCore Advisory Group</title>
 
-  <!-- SEO + SOCIAL META -->
-  <meta name="description" content="InfraCore Advisory Group provides business advisory, bookkeeping, and tax preparation services for entrepreneurs and small business owners.">
+  <!-- SEO + META -->
+  <meta name="description" content="InfraCore Advisory Group provides strategic business advisory, bookkeeping, and tax preparation services for entrepreneurs and small business owners.">
+  <meta name="keywords" content="business advisory, bookkeeping, tax preparation, small business consulting">
   <meta property="og:title" content="InfraCore Advisory Group">
   <meta property="og:description" content="Strategic advisory, bookkeeping, and tax preparation for entrepreneurs and growing businesses.">
   <meta property="og:url" content="https://www.infracoreadvisorygroup.com">
@@ -17,135 +18,95 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
+    body { background: #f4f7fb; color: #1f2937; line-height: 1.6; }
 
-    body {
-      background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    /* NAV */
     nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 20px;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
     }
-
-    nav img {
-      height: 36px;
-    }
-
+    nav img { height: 40px; }
     nav a {
-      margin-left: 18px;
+      margin-left: 20px;
       text-decoration: none;
       color: #334155;
       font-weight: 500;
       font-size: 15px;
     }
 
-    /* HERO */
     .hero {
-      background: linear-gradient(135deg, #eef3fb, #ffffff);
-      padding: 72px 20px 64px;
+      background: linear-gradient(180deg, #eef2ff 0%, #f4f7fb 100%);
+      padding: 96px 20px 88px;
       text-align: center;
       border-bottom: 1px solid #e5e7eb;
     }
 
-    .hero-logo {
-      max-width: 340px;
+    .hero img {
+      max-width: 420px;
       width: 100%;
-      margin: 0 auto 32px;
-      display: block;
+      margin-bottom: 36px;
     }
 
     .hero h1 {
-      font-size: 32px;
+      font-size: 44px;
       font-weight: 700;
       color: #0f172a;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 18px;
       color: #475569;
       max-width: 760px;
-      margin: 0 auto 32px;
+      margin: 0 auto 36px;
     }
 
     .cta {
-      display: inline-block;
       background: #2563eb;
       color: #ffffff;
-      padding: 16px 26px;
+      padding: 16px 30px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
       font-size: 16px;
+      display: inline-block;
     }
 
-    /* CONTENT */
-    section {
-      padding: 64px 20px;
-      max-width: 960px;
-      margin: 0 auto;
+    .band {
+      padding: 88px 20px;
+      background: #ffffff;
     }
 
-    section h2 {
-      font-size: 28px;
-      font-weight: 600;
+    .band h2 {
+      font-size: 34px;
       color: #0f172a;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
-    section p {
+    .band p {
       font-size: 17px;
-      color: #374151;
-      margin-bottom: 16px;
+      color: #475569;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
     }
 
-    /* FOOTER */
     footer {
       background: #0f172a;
       color: #e5e7eb;
-      padding: 36px 20px;
+      padding: 40px 20px;
       text-align: center;
       font-size: 14px;
     }
 
-    /* DESKTOP */
     @media (min-width: 900px) {
-      nav {
-        padding: 20px 80px;
-      }
-
-      .hero {
-        padding: 120px 80px 110px;
-      }
-
-      .hero-logo {
-        max-width: 420px;
-      }
-
-      .hero h1 {
-        font-size: 46px;
-      }
-
-      section {
-        padding: 90px 20px;
-      }
-
-      section h2 {
-        font-size: 34px;
-      }
+      nav { padding: 20px 80px; }
+      .hero { padding: 140px 80px 120px; }
     }
   </style>
 </head>
@@ -155,34 +116,28 @@
 <nav>
   <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
   <div>
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<div class="hero">
-  <img class="hero-logo" src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group Logo">
-
+<section class="hero">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group Logo">
   <h1>From Concept to Clarity.<br>From Business to Growth.</h1>
-
   <p>
-    InfraCore Advisory Group supports entrepreneurs and small business owners with
-    strategic guidance, bookkeeping, and tax preparation — without running their business for them.
+    We support entrepreneurs and small business owners with strategic advisory,
+    bookkeeping, and tax preparation — without taking over their business.
   </p>
-
   <a class="cta" href="contact.html">Start the Conversation</a>
-</div>
+</section>
 
-<section>
-  <h2>Strategic Support Without Taking Over</h2>
+<section class="band">
+  <h2>Strategic Support Without Operational Control</h2>
   <p>
-    We help you build correctly, understand your numbers, and make informed decisions
-    about what comes next — whether you’re starting with an idea or managing a growing business.
-  </p>
-  <p>
-    You stay in control. We provide structure, clarity, and direction.
+    InfraCore Advisory Group provides structure, insight, and direction so business
+    owners can make informed decisions with confidence.
   </p>
 </section>
 
