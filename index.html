@@ -4,12 +4,119 @@
   <meta charset="UTF-8">
   <title>InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- INLINE STYLES -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      color: #0a1e3c;
+      line-height: 1.7;
+      background: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    nav img {
+      height: 48px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #0a1e3c;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1f4fd8;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 0 80px;
+      color: white;
+      background:
+        linear-gradient(rgba(10,30,60,0.65), rgba(10,30,60,0.65)),
+        url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1950&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      max-width: 750px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 90px 80px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      max-width: 900px;
+      color: #1f2937;
+    }
+
+    footer {
+      background: #0a1e3c;
+      color: white;
+      padding: 40px 80px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 20px;
+      }
+      .hero {
+        padding: 40px 20px;
+        height: auto;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      section {
+        padding: 60px 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <nav>
-  <img src="assets/images/logo.png" alt="InfraCore Advisory Group">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
   <div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -18,7 +125,7 @@
   </div>
 </nav>
 
-<section class="hero">
+<div class="hero">
   <div>
     <h1>From Concept to Clarity. From Business to Growth.</h1>
     <p>
@@ -27,21 +134,21 @@
       informed financial and strategic decisions.
     </p>
   </div>
-</section>
+</div>
 
 <section>
   <h2>Strategic Support Without Taking Over</h2>
   <p>
-    We work alongside business owners to build foundations, organize finances,
-    prepare taxes, and plan what comes next — without running day-to-day
-    operations.
+    We help turn ideas into reality, organize finances for existing businesses,
+    prepare taxes, plan growth, and navigate decisions — without running your
+    business for you.
   </p>
   <p>
-    Our role is advisory and execution-supportive. You remain the operator.
+    You stay in control. We provide clarity, structure, and direction.
   </p>
 </section>
 
-<footer class="footer">
+<footer>
   Strategic Business Advisory • Bookkeeping • Tax Preparation
 </footer>
 
