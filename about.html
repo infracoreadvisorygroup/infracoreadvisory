@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>About | InfraCore Advisory Group</title>
 
-  <meta name="description" content="Learn about InfraCore Advisory Group and our advisory approach.">
+  <!-- SEO + META -->
+  <meta name="description" content="InfraCore Advisory Group provides structured business advisory grounded in clarity, experience, and financial insight.">
+  <meta property="og:title" content="About | InfraCore Advisory Group">
+  <meta property="og:type" content="website">
+
   <link rel="icon" href="favicon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,42 +16,57 @@
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
-    body { background: #f4f7fb; color: #1f2937; }
+    body { background: #f4f7fb; color: #1f2937; line-height: 1.6; }
 
     nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 16px 20px; background: #ffffff; border-bottom: 1px solid #e5e7eb;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav img { height: 36px; }
-    nav a { margin-left: 18px; text-decoration: none; color: #334155; font-weight: 500; }
+    nav img { height: 40px; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #334155;
+      font-weight: 500;
+      font-size: 15px;
+    }
 
     .header {
-      background: #ffffff;
-      padding: 64px 20px;
+      background: linear-gradient(180deg, #eef2ff 0%, #f4f7fb 100%);
+      padding: 96px 20px;
       text-align: center;
+      border-bottom: 1px solid #e5e7eb;
     }
-    .header h1 { font-size: 32px; color: #0f172a; }
+    .header h1 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #0f172a;
+    }
 
     .cards {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 96px 20px;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 24px;
+      gap: 28px;
     }
 
     .card {
       background: #ffffff;
-      border-radius: 10px;
-      padding: 28px;
       border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 36px;
     }
 
     .card h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
+      font-size: 22px;
       color: #0f172a;
+      margin-bottom: 12px;
     }
 
     .card p {
@@ -58,14 +77,14 @@
     footer {
       background: #0f172a;
       color: #e5e7eb;
-      padding: 36px 20px;
+      padding: 40px 20px;
       text-align: center;
       font-size: 14px;
     }
 
     @media (min-width: 900px) {
+      nav { padding: 20px 80px; }
       .cards { grid-template-columns: repeat(3, 1fr); }
-      .header h1 { font-size: 44px; }
     }
   </style>
 </head>
@@ -75,44 +94,46 @@
 <nav>
   <img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
   <div>
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<div class="header">
-  <h1>Built on Clarity, Structure, and Experience</h1>
-</div>
+<section class="header">
+  <h1>Advisory Built on Structure and Clarity</h1>
+</section>
 
-<div class="cards">
+<section class="cards">
   <div class="card">
-    <h2>Why We Exist</h2>
+    <h2>Our Purpose</h2>
     <p>
-      We support entrepreneurs and small business owners who need guidance
-      without giving up control of their business.
+      InfraCore Advisory Group exists to help entrepreneurs and business owners
+      build, organize, and grow with confidence — without relinquishing control.
     </p>
   </div>
 
   <div class="card">
-    <h2>How We Work</h2>
+    <h2>Our Approach</h2>
     <p>
-      We advise, organize, and prepare — we don’t manage your day-to-day operations.
+      We focus on structure, financial clarity, and informed decision-making,
+      grounded in real-world experience.
     </p>
   </div>
 
   <div class="card">
-    <h2>What We Believe</h2>
+    <h2>Our Role</h2>
     <p>
-      Strong businesses are built on clean financials, informed decisions,
-      and intentional growth.
+      We advise, prepare, and organize. We do not manage daily operations or
+      replace ownership decisions.
     </p>
   </div>
-</div>
+</section>
 
 <footer>
-  Strategic Business Advisory • Bookkeeping • Tax Preparation
+  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
+  Serving entrepreneurs and small businesses nationwide
 </footer>
 
 </body>
