@@ -17,7 +17,7 @@
 
     body {
       background: #ffffff;
-      color: #0a1e3c;
+      color: #1f2937;
       line-height: 1.6;
     }
 
@@ -25,52 +25,52 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 20px;
+      padding: 14px 20px;
       border-bottom: 1px solid #e5e7eb;
       background: #ffffff;
     }
 
     nav img {
-      height: 34px;
+      height: 32px;
     }
 
     nav a {
-      margin-left: 20px;
+      margin-left: 18px;
       text-decoration: none;
-      color: #0a1e3c;
+      color: #1f2937;
       font-weight: 500;
       font-size: 15px;
     }
 
     .hero {
-      padding: 56px 20px;
-      background: #0a1e3c;
-      color: #ffffff;
+      padding: 64px 20px;
+      background: #f8fafc;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 700;
-      max-width: 700px;
+      color: #0f172a;
     }
 
     section {
-      padding: 48px 20px;
       max-width: 720px;
       margin: 0 auto;
+      padding: 48px 20px;
     }
 
     p {
-      font-size: 17px;
-      color: #1f2937;
+      font-size: 16px;
+      color: #374151;
       margin-bottom: 24px;
     }
 
     label {
       font-size: 14px;
       font-weight: 600;
-      margin-bottom: 6px;
       display: block;
+      margin-bottom: 6px;
     }
 
     input, textarea, select {
@@ -84,11 +84,10 @@
 
     textarea {
       min-height: 120px;
-      resize: vertical;
     }
 
     button {
-      background: #0a1e3c;
+      background: #2563eb;
       color: #ffffff;
       border: none;
       padding: 14px 20px;
@@ -100,28 +99,25 @@
     }
 
     button:hover {
-      background: #1f4fd8;
+      background: #1d4ed8;
     }
 
     footer {
-      background: #0a1e3c;
-      color: #ffffff;
+      background: #f1f5f9;
+      color: #475569;
       padding: 32px 20px;
       font-size: 14px;
-      margin-top: 48px;
+      text-align: center;
+      border-top: 1px solid #e5e7eb;
     }
 
     @media (min-width: 900px) {
       nav {
-        padding: 20px 80px;
-      }
-
-      .hero {
-        padding: 90px 80px;
+        padding: 18px 80px;
       }
 
       .hero h1 {
-        font-size: 46px;
+        font-size: 42px;
       }
 
       section {
@@ -149,41 +145,37 @@
 
 <section>
   <p>
-    Use the form below to tell us about yourself, your business, and what kind of
-    support you’re looking for. This helps us prepare before reaching out.
+    Tell us about yourself and your business. Your submission is sent directly to
+    <strong>contact@infracoreadvisorygroup.com</strong>.
   </p>
 
-  <form action="mailto:contact@infracoreadvisorygroup.com" method="post" enctype="text/plain">
+  <!-- FORMSPREE FORM -->
+  <form action="https://formspree.io/f/xwvnkakl" method="POST">
 
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="Full Name" required>
+    <input type="text" id="name" name="name" required>
 
     <label for="email">Email Address</label>
-    <input type="email" id="email" name="Email" required>
+    <input type="email" id="email" name="email" required>
 
     <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="Phone">
+    <input type="tel" id="phone" name="phone">
 
-    <label for="business">Business Name (if applicable)</label>
-    <input type="text" id="business" name="Business Name">
+    <label for="business">Business Name</label>
+    <input type="text" id="business" name="business">
 
-    <label for="stage">Where are you in your business journey?</label>
-    <select id="stage" name="Business Stage">
-      <option value="">Select one</option>
+    <label for="stage">Business Stage</label>
+    <select id="stage" name="stage">
       <option>Idea / Not Started</option>
-      <option>New Business (under 1 year)</option>
+      <option>New Business</option>
       <option>Established Business</option>
       <option>Growing / Scaling</option>
     </select>
 
-    <label for="services">What support are you looking for?</label>
-    <textarea id="services" name="Services Needed"
-      placeholder="Examples: business setup, bookkeeping, taxes, planning, funding guidance..."></textarea>
+    <label for="message">How can we help?</label>
+    <textarea id="message" name="message"></textarea>
 
-    <label for="notes">Anything else we should know?</label>
-    <textarea id="notes" name="Additional Notes"></textarea>
-
-    <button type="submit">Submit Intake Form</button>
+    <button type="submit">Submit Intake</button>
   </form>
 </section>
 
