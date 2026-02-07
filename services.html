@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>Services | InfraCore Advisory Group</title>
 
-  <meta name="description" content="Advisory, bookkeeping, and tax services for business owners.">
+  <!-- SEO + META -->
+  <meta name="description" content="Business advisory, bookkeeping, and tax preparation services for entrepreneurs and small business owners.">
+  <meta property="og:title" content="Services | InfraCore Advisory Group">
+  <meta property="og:type" content="website">
+
   <link rel="icon" href="favicon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,38 +19,44 @@
     body { background: #f4f7fb; color: #1f2937; }
 
     nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 16px 20px; background: #ffffff; border-bottom: 1px solid #e5e7eb;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav img { height: 36px; }
-    nav a { margin-left: 18px; text-decoration: none; color: #334155; }
+    nav img { height: 40px; }
+    nav a { margin-left: 20px; text-decoration: none; color: #334155; }
 
     .header {
-      background: #ffffff;
-      padding: 64px 20px;
+      background: linear-gradient(180deg, #eef2ff 0%, #f4f7fb 100%);
+      padding: 96px 20px;
       text-align: center;
+      border-bottom: 1px solid #e5e7eb;
     }
+    .header h1 { font-size: 44px; color: #0f172a; }
 
     .grid {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 96px 20px;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 24px;
+      gap: 28px;
     }
 
     .service {
       background: #ffffff;
-      padding: 28px;
-      border-radius: 10px;
       border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 36px;
     }
 
     .service h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
+      font-size: 22px;
       color: #0f172a;
+      margin-bottom: 10px;
     }
 
     .service p {
@@ -57,12 +67,13 @@
     footer {
       background: #0f172a;
       color: #e5e7eb;
-      padding: 36px 20px;
+      padding: 40px 20px;
       text-align: center;
       font-size: 14px;
     }
 
     @media (min-width: 900px) {
+      nav { padding: 20px 80px; }
       .grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
@@ -73,41 +84,42 @@
 <nav>
   <img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
   <div>
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<div class="header">
-  <h1>What We Do</h1>
-</div>
+<section class="header">
+  <h1>Our Services</h1>
+</section>
 
-<div class="grid">
+<section class="grid">
   <div class="service">
     <h2>Business Advisory</h2>
-    <p>Guidance on structure, decisions, and growth without operational control.</p>
+    <p>Strategic guidance for business setup, decision-making, and growth planning.</p>
   </div>
 
   <div class="service">
     <h2>Bookkeeping</h2>
-    <p>Accurate, organized financials that support clarity and planning.</p>
+    <p>Accurate, organized financial records designed to support clarity and compliance.</p>
   </div>
 
   <div class="service">
-    <h2>Tax Preparation</h2>
-    <p>Federal and state tax filing with proactive planning support.</p>
+    <h2>Tax Preparation & Planning</h2>
+    <p>Federal and state tax preparation with proactive planning support.</p>
   </div>
 
   <div class="service">
-    <h2>Administrative Support</h2>
-    <p>Help navigating paperwork, grants, loans, and compliance needs.</p>
+    <h2>Administrative & Funding Support</h2>
+    <p>Assistance organizing documentation for loans, grants, and financial requests.</p>
   </div>
-</div>
+</section>
 
 <footer>
-  Strategic Business Advisory • Bookkeeping • Tax Preparation
+  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
+  Serving entrepreneurs and small businesses nationwide
 </footer>
 
 </body>
