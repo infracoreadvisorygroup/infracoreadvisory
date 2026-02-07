@@ -4,22 +4,110 @@
   <meta charset="UTF-8">
   <title>InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { margin:0;font-family:'Inter',sans-serif;color:#0f172a;line-height:1.6;background:#fff; }
-    nav { background:#0f172a;padding:18px 32px;display:flex;justify-content:space-between;align-items:center; }
-    nav a { color:#fff;margin-left:20px;text-decoration:none;font-weight:600;font-size:14px; }
-    .container { max-width:1200px;margin:auto;padding:90px 24px; }
-    h1 { font-size:48px;max-width:900px; }
-    h2 { font-size:32px;margin-top:90px; }
-    p { font-size:17px;color:#1e293b; }
-    .lead { font-size:20px;max-width:900px; }
-    .section-soft { background:#f8fafc; }
-    .grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px; }
-    .card { background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:34px; }
-    footer { background:#f1f5f9;padding:48px 24px;font-size:14px;color:#334155; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #0b1220;
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(11,18,32,0.9);
+      padding: 18px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url("https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1950&q=80") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 60px;
+    }
+
+    .hero-box {
+      background: rgba(255,255,255,0.92);
+      padding: 60px;
+      max-width: 650px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 120px 36px;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .card {
+      border-top: 3px solid #0b1220;
+      padding-top: 24px;
+    }
+
+    .image-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #0b1220;
+      color: #9ca3af;
+      padding: 60px 36px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 20px; }
+      .hero-box { padding: 30px; }
+      .image-section { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
+
 <body>
 
 <nav>
@@ -33,52 +121,56 @@
   </div>
 </nav>
 
-<div class="container">
-  <h1>Business Infrastructure & Advisory Services</h1>
-  <p class="lead">
-    InfraCore Advisory Group supports business owners through planning,
-    operational execution, bookkeeping, and tax compliance. Our work
-    focuses on building structured foundations that support long-term
-    stability and informed decision-making.
-  </p>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>Business Advisory & Financial Infrastructure</h1>
+    <p>
+      InfraCore Advisory Group provides structured advisory, bookkeeping,
+      and tax services for operating businesses. Our work centers on
+      financial accuracy, operational discipline, and compliance.
+    </p>
+    <p style="color:#475569;font-size:14px;">
+      Personal tax preparation is provided exclusively as part of ongoing
+      business engagements.
+    </p>
+  </div>
+</section>
 
-<div class="section-soft">
-  <div class="container">
-    <h2>What We Do</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Business Advisory & Planning</h3>
-        <p>Strategic planning, financial modeling, and execution support for startups and operating businesses.</p>
-      </div>
-      <div class="card">
-        <h3>Bookkeeping & Financial Infrastructure</h3>
-        <p>Accounting system setup, bookkeeping workflows, and reporting designed for clarity and compliance.</p>
-      </div>
-      <div class="card">
-        <h3>Tax Preparation & Ongoing Support</h3>
-        <p>Business tax preparation with personal tax services provided exclusively for active business clients.</p>
-      </div>
+<!-- SERVICES -->
+<section class="container">
+  <h2>Core Capabilities</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Business Advisory</h3>
+      <p>Planning, operational review, and execution support.</p>
+    </div>
+    <div class="card">
+      <h3>Bookkeeping & Financial Systems</h3>
+      <p>Accounting systems, workflows, and reporting.</p>
+    </div>
+    <div class="card">
+      <h3>Tax Preparation & Compliance</h3>
+      <p>Business tax services with integrated personal tax support.</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container">
-  <h2>Who We Work With</h2>
-  <p>
-    We work with business owners and founders who want structure,
-    organization, and consistent financial guidance. Our clients are
-    launching, formalizing, or scaling businesses and prefer ongoing
-    support rather than one-time services.
-  </p>
+<!-- IMAGE + TEXT -->
+<section class="container image-section">
+  <div>
+    <h2>Who We Work With</h2>
+    <p>
+      We work with business owners and operators seeking disciplined
+      financial oversight, reliable reporting, and long-term advisory
+      relationships. We do not provide investment management, securities
+      advice, or trust and estate services.
+    </p>
+  </div>
 
-  <h2>Next Steps</h2>
-  <p>
-    Engagements begin with a conversation to understand goals, complexity,
-    and alignment. Services are structured based on scope and operational needs.
-  </p>
-  <p><a href="contact.html" style="color:#2563eb;font-weight:600;">Contact InfraCore Advisory Group →</a></p>
-</div>
+  <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80" alt="Advisory meeting">
+</section>
 
 <footer>
   © InfraCore Advisory Group. Business advisory, bookkeeping, and tax services.
