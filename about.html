@@ -4,77 +4,68 @@
   <meta charset="UTF-8">
   <title>About | InfraCore Advisory Group</title>
 
-  <!-- SEO + SOCIAL META -->
-  <meta name="description" content="Learn about InfraCore Advisory Group and our approach to business advisory, bookkeeping, and tax preparation.">
-  <meta name="keywords" content="business advisory firm, bookkeeping services, tax advisory">
-  <meta property="og:title" content="About | InfraCore Advisory Group">
-  <meta property="og:description" content="Advisory services built on clarity, structure, and real-world experience.">
-  <meta property="og:url" content="https://www.infracoreadvisorygroup.com/about.html">
-  <meta property="og:type" content="website">
-
-  <!-- FAVICON -->
+  <meta name="description" content="Learn about InfraCore Advisory Group and our advisory approach.">
   <link rel="icon" href="favicon.png" type="image/png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #ffffff; color: #1f2937; line-height: 1.6; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
+    body { background: #f4f7fb; color: #1f2937; }
 
     nav {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 14px 20px; border-bottom: 1px solid #e5e7eb; background: #ffffff;
+      padding: 16px 20px; background: #ffffff; border-bottom: 1px solid #e5e7eb;
     }
-    nav img { height: 32px; }
-    nav a { margin-left: 18px; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 15px; }
+    nav img { height: 36px; }
+    nav a { margin-left: 18px; text-decoration: none; color: #334155; font-weight: 500; }
 
-    .page-header {
-      background: #f8fafc;
+    .header {
+      background: #ffffff;
       padding: 64px 20px;
       text-align: center;
     }
+    .header h1 { font-size: 32px; color: #0f172a; }
 
-    .page-header h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    section {
-      padding: 48px 20px;
-      max-width: 900px;
+    .cards {
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
     }
 
-    section h2 {
-      font-size: 26px;
-      font-weight: 600;
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 28px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
       color: #0f172a;
-      margin-bottom: 16px;
     }
 
-    section p {
-      font-size: 17px;
-      color: #374151;
-      margin-bottom: 16px;
+    .card p {
+      font-size: 16px;
+      color: #475569;
     }
 
     footer {
-      background: #f1f5f9;
-      color: #475569;
-      padding: 32px 20px;
-      font-size: 14px;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 36px 20px;
       text-align: center;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
     }
 
     @media (min-width: 900px) {
-      nav { padding: 18px 80px; }
-      .page-header h1 { font-size: 42px; }
-      section { padding: 80px 20px; }
-      section h2 { font-size: 34px; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .header h1 { font-size: 44px; }
     }
   </style>
 </head>
@@ -82,7 +73,7 @@
 <body>
 
 <nav>
-  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
   <div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -91,39 +82,37 @@
   </div>
 </nav>
 
-<div class="page-header">
-  <h1>About InfraCore Advisory Group</h1>
+<div class="header">
+  <h1>Built on Clarity, Structure, and Experience</h1>
 </div>
 
-<section>
-  <h2>Our Purpose</h2>
-  <p>
-    InfraCore Advisory Group was built to support entrepreneurs and small business
-    owners who need clarity, structure, and guidance — without handing over control
-    of their business.
-  </p>
-  <p>
-    Our work is grounded in real-world experience, not theory. We help clients
-    understand their financial position, meet compliance obligations, and make
-    informed decisions about growth.
-  </p>
-</section>
+<div class="cards">
+  <div class="card">
+    <h2>Why We Exist</h2>
+    <p>
+      We support entrepreneurs and small business owners who need guidance
+      without giving up control of their business.
+    </p>
+  </div>
 
-<section>
-  <h2>How We Work</h2>
-  <p>
-    We do not run your business. We work alongside you to organize information,
-    provide insight, and help you determine next steps.
-  </p>
-  <p>
-    Whether you are starting with an idea or operating an established business,
-    our role is to bring order, clarity, and direction.
-  </p>
-</section>
+  <div class="card">
+    <h2>How We Work</h2>
+    <p>
+      We advise, organize, and prepare — we don’t manage your day-to-day operations.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What We Believe</h2>
+    <p>
+      Strong businesses are built on clean financials, informed decisions,
+      and intentional growth.
+    </p>
+  </div>
+</div>
 
 <footer>
-  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
-  Serving entrepreneurs and small businesses nationwide
+  Strategic Business Advisory • Bookkeeping • Tax Preparation
 </footer>
 
 </body>
