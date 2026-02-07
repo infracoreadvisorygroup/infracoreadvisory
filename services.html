@@ -4,75 +4,66 @@
   <meta charset="UTF-8">
   <title>Services | InfraCore Advisory Group</title>
 
-  <!-- SEO + SOCIAL META -->
-  <meta name="description" content="Explore advisory, bookkeeping, and tax preparation services offered by InfraCore Advisory Group.">
-  <meta name="keywords" content="business advisory services, bookkeeping, tax preparation">
-  <meta property="og:title" content="Services | InfraCore Advisory Group">
-  <meta property="og:description" content="Structured advisory services designed for business owners.">
-  <meta property="og:url" content="https://www.infracoreadvisorygroup.com/services.html">
-  <meta property="og:type" content="website">
-
+  <meta name="description" content="Advisory, bookkeeping, and tax services for business owners.">
   <link rel="icon" href="favicon.png" type="image/png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #ffffff; color: #1f2937; line-height: 1.6; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
+    body { background: #f4f7fb; color: #1f2937; }
 
     nav {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 14px 20px; border-bottom: 1px solid #e5e7eb;
+      padding: 16px 20px; background: #ffffff; border-bottom: 1px solid #e5e7eb;
     }
-    nav img { height: 32px; }
-    nav a { margin-left: 18px; text-decoration: none; color: #1f2937; font-weight: 500; font-size: 15px; }
+    nav img { height: 36px; }
+    nav a { margin-left: 18px; text-decoration: none; color: #334155; }
 
-    .page-header {
-      background: #f8fafc;
+    .header {
+      background: #ffffff;
       padding: 64px 20px;
       text-align: center;
     }
 
-    .page-header h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    section {
-      padding: 48px 20px;
-      max-width: 900px;
+    .grid {
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
     }
 
-    h2 {
-      font-size: 22px;
-      font-weight: 600;
+    .service {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .service h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
       color: #0f172a;
-      margin-bottom: 8px;
     }
 
-    p {
-      font-size: 17px;
-      color: #374151;
-      margin-bottom: 24px;
+    .service p {
+      font-size: 16px;
+      color: #475569;
     }
 
     footer {
-      background: #f1f5f9;
-      color: #475569;
-      padding: 32px 20px;
-      font-size: 14px;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 36px 20px;
       text-align: center;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
     }
 
     @media (min-width: 900px) {
-      nav { padding: 18px 80px; }
-      .page-header h1 { font-size: 42px; }
-      section { padding: 80px 20px; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -80,7 +71,7 @@
 <body>
 
 <nav>
-  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
   <div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -89,39 +80,34 @@
   </div>
 </nav>
 
-<div class="page-header">
-  <h1>Our Services</h1>
+<div class="header">
+  <h1>What We Do</h1>
 </div>
 
-<section>
-  <h2>Business Advisory</h2>
-  <p>
-    Strategic guidance for entrepreneurs and business owners navigating setup,
-    growth, and operational decisions.
-  </p>
+<div class="grid">
+  <div class="service">
+    <h2>Business Advisory</h2>
+    <p>Guidance on structure, decisions, and growth without operational control.</p>
+  </div>
 
-  <h2>Bookkeeping & Financial Organization</h2>
-  <p>
-    Ongoing bookkeeping services designed to keep financial records accurate,
-    organized, and decision-ready.
-  </p>
+  <div class="service">
+    <h2>Bookkeeping</h2>
+    <p>Accurate, organized financials that support clarity and planning.</p>
+  </div>
 
-  <h2>Tax Preparation & Planning</h2>
-  <p>
-    Federal and state tax preparation with guidance on quarterly payments,
-    compliance, and tax-aware decisions.
-  </p>
+  <div class="service">
+    <h2>Tax Preparation</h2>
+    <p>Federal and state tax filing with proactive planning support.</p>
+  </div>
 
-  <h2>Administrative & Funding Support</h2>
-  <p>
-    Assistance organizing paperwork and financial documentation for loans,
-    grants, and administrative requirements.
-  </p>
-</section>
+  <div class="service">
+    <h2>Administrative Support</h2>
+    <p>Help navigating paperwork, grants, loans, and compliance needs.</p>
+  </div>
+</div>
 
 <footer>
-  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
-  Serving entrepreneurs and small businesses nationwide
+  Strategic Business Advisory • Bookkeeping • Tax Preparation
 </footer>
 
 </body>
