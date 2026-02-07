@@ -4,12 +4,50 @@
   <meta charset="UTF-8">
   <title>About | InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #ffffff; color: #0a1e3c; line-height: 1.6; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 20px; border-bottom: 1px solid #e5e7eb; background: #ffffff;
+    }
+    nav img { height: 34px; }
+    nav a { margin-left: 20px; text-decoration: none; color: #0a1e3c; font-weight: 500; font-size: 15px; }
+
+    .hero {
+      padding: 56px 20px; background: #0a1e3c; color: #ffffff;
+    }
+    .hero h1 { font-size: 32px; font-weight: 700; max-width: 700px; }
+
+    .image-section img { width: 100%; display: block; }
+
+    section { padding: 48px 20px; }
+    h2 { font-size: 26px; font-weight: 600; margin-bottom: 16px; }
+    p { font-size: 17px; color: #1f2937; max-width: 720px; margin-bottom: 16px; }
+
+    footer {
+      background: #0a1e3c; color: #ffffff; padding: 32px 20px; font-size: 14px;
+    }
+
+    @media (min-width: 900px) {
+      nav { padding: 20px 80px; }
+      .hero { padding: 90px 80px; }
+      .hero h1 { font-size: 46px; }
+      section { padding: 80px; }
+      h2 { font-size: 34px; }
+      .image-section img { max-height: 420px; object-fit: cover; }
+    }
+  </style>
 </head>
+
 <body>
 
 <nav>
-  <img src="assets/images/logo.png" alt="InfraCore Advisory Group">
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
   <div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -18,25 +56,40 @@
   </div>
 </nav>
 
+<div class="hero">
+  <h1>Built by Experience, Not Theory</h1>
+</div>
+
+<div class="image-section">
+  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" alt="Professional advisory environment">
+</div>
+
 <section>
-  <h2>Built by Experience, Not Theory</h2>
+  <h2>Who We Are</h2>
   <p>
-    InfraCore Advisory Group was created to support business owners who need
-    clarity, structure, and informed guidance — without handing over control
-    of their business.
+    InfraCore Advisory Group was built for entrepreneurs and business owners who
+    need clarity, structure, and guidance — not someone to run their business for them.
   </p>
   <p>
-    Our approach is shaped by real-world experience building businesses and
-    navigating the realities of growth, compliance, cash flow, and
-    decision-making.
-  </p>
-  <p>
-    We believe strong businesses are built through proper foundations,
-    organized financials, and proactive planning — not reactive fixes.
+    Our work is grounded in real-world experience building businesses, organizing
+    finances, navigating tax obligations, and planning sustainable growth.
   </p>
 </section>
 
-<footer class="footer">
+<div class="image-section">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Business discussion">
+</div>
+
+<section>
+  <h2>Our Philosophy</h2>
+  <p>
+    We believe strong businesses are built on informed decisions, clean financials,
+    and proper foundations. Our role is to help you understand your position,
+    evaluate your options, and move forward with confidence.
+  </p>
+</section>
+
+<footer>
   Infrastructure • Clarity • Strategy
 </footer>
 
