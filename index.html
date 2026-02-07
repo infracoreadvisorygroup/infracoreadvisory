@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>InfraCore Advisory Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="InfraCore Advisory Group provides business planning, build-out, bookkeeping, and business tax preparation for small businesses.">
   <style>
     body {
       margin: 0;
@@ -15,47 +14,70 @@
     }
     nav {
       background: #0f172a;
-      padding: 18px 30px;
+      padding: 18px 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     nav a {
       color: white;
-      text-decoration: none;
       margin-left: 18px;
+      text-decoration: none;
       font-weight: 600;
       font-size: 15px;
     }
     .container {
-      max-width: 1000px;
-      margin: 80px auto;
-      padding: 0 20px;
+      max-width: 1200px;
+      margin: 90px auto;
+      padding: 0 24px;
     }
     h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
+      font-size: 46px;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+    h2 {
+      margin-top: 90px;
+      font-size: 32px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    p.lead {
+      font-size: 20px;
+      max-width: 880px;
+      color: #1e293b;
     }
     p {
-      font-size: 18px;
-      max-width: 750px;
+      font-size: 17px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      background: #2563eb;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 30px;
+      background: #ffffff;
+    }
+    .subtle {
+      color: #475569;
+      font-size: 16px;
     }
     footer {
-      margin-top: 100px;
+      margin-top: 140px;
+      padding: 48px 24px;
       background: #f1f5f9;
-      padding: 30px 20px;
       font-size: 14px;
       color: #334155;
+    }
+    footer p {
+      max-width: 1100px;
+      margin: auto;
     }
   </style>
 </head>
@@ -70,31 +92,90 @@
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="process.html">Process</a>
-    <a href="pricing.html">Pricing</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
 <div class="container">
-  <h1>Business Infrastructure Built to Last</h1>
 
-  <p>
-    InfraCore Advisory Group provides structured business planning, operational build-out,
-    bookkeeping, and licensed business tax preparation for startups and established businesses.
+  <!-- HERO -->
+  <h1>Business Infrastructure & Advisory Services Built for Long-Term Growth</h1>
+
+  <p class="lead">
+    InfraCore Advisory Group supports businesses and individuals through strategic
+    planning, operational execution, and financial clarity. We focus on building
+    strong foundations that allow our clients to operate with confidence, structure,
+    and long-term stability.
+  </p>
+
+  <p class="subtle">
+    Our work bridges advisory, operational support, and tax services—helping clients
+    move from ideas to execution and from complexity to clarity.
+  </p>
+
+  <!-- CAPABILITIES -->
+  <h2>Core Capabilities</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Business Planning & Advisory</h3>
+      <p>
+        Strategic planning, financial modeling, and execution roadmaps for startups
+        and established businesses navigating growth, restructuring, or formalization.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Operational & Financial Infrastructure</h3>
+      <p>
+        Design and implementation of accounting systems, bookkeeping workflows,
+        reporting structures, and operational processes that support informed
+        decision-making.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Tax Preparation & Ongoing Support</h3>
+      <p>
+        Business and personal tax preparation, compliance support, and year-round
+        guidance aligned with financial strategy and operational goals.
+      </p>
+    </div>
+  </div>
+
+  <!-- WHO WE WORK WITH -->
+  <h2>Who We Work With</h2>
+
+  <p style="max-width:900px;">
+    We work with business owners, founders, and individuals who value structure,
+    proactive planning, and reliable financial guidance. Our clients are often
+    launching new ventures, scaling operations, formalizing existing businesses,
+    or seeking ongoing advisory and tax support.
+  </p>
+
+  <!-- NEXT STEPS -->
+  <h2>Next Steps</h2>
+
+  <p style="max-width:850px;">
+    Every engagement begins with a conversation to understand goals, complexity,
+    and alignment. From there, services are structured based on scope and long-term
+    needs—not one-size-fits-all packages.
   </p>
 
   <p>
-    We focus on building the systems, structure, and financial clarity behind successful
-    companies — without taking ownership or control.
+    <a href="contact.html" style="color:#2563eb;font-weight:600;text-decoration:none;">
+      Contact InfraCore Advisory Group →
+    </a>
   </p>
 
-  <a class="button" href="contact.html">Request a Consultation</a>
 </div>
 
 <footer>
-  InfraCore Advisory Group provides business planning, bookkeeping, and business tax preparation services.
-  Legal advice, CPA services, audits, and personal tax preparation are not provided.
+  <p>
+    © InfraCore Advisory Group. Advisory, operational support, bookkeeping,
+    and tax services for businesses and individuals.
+  </p>
 </footer>
 
 </body>
