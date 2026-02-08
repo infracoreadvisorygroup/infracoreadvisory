@@ -137,7 +137,7 @@ footer{
 <h1>Start the Conversation</h1>
 <p>
 Use the form below to let us know what prompted you to reach out.
-This helps us review scope and determine next steps.
+This allows us to review scope and determine appropriate next steps.
 </p>
 </section>
 
@@ -146,46 +146,48 @@ This helps us review scope and determine next steps.
 
 <form action="https://formspree.io/f/xwvnkakl" method="POST">
 
-<input type="hidden" name="_redirect" value="https://www.infracoreadvisorygroup.com/thank-you.html">
+  <!-- REQUIRED: redirect to your branded thank-you page -->
+  <input type="hidden" name="_redirect"
+    value="https://www.infracoreadvisorygroup.com/thank-you.html">
 
-<label>Full Name</label>
-<input type="text" name="name" required>
+  <label>Full Name</label>
+  <input type="text" name="name" required>
 
-<label>Email Address</label>
-<input type="email" name="email" required>
+  <label>Email Address</label>
+  <input type="email" name="email" required>
 
-<label>Phone Number</label>
-<input type="tel" name="phone">
+  <label>Phone Number</label>
+  <input type="tel" name="phone">
 
-<label>What best describes what you’re reaching out about?</label>
-<div class="check-group">
-  <label><input type="checkbox" name="reason" value="Foundational engagement"> Foundational engagement (new or restructuring business)</label>
-  <label><input type="checkbox" name="reason" value="Ongoing advisory"> Ongoing advisory & bookkeeping support</label>
-  <label><input type="checkbox" name="reason" value="Tax services"> Tax preparation or tax-related support</label>
-  <label><input type="checkbox" name="reason" value="Multiple areas"> Multiple areas apply</label>
-</div>
+  <label>What best describes what you’re reaching out about?</label>
+  <div class="check-group">
+    <label><input type="checkbox" name="engagement" value="Foundational"> Foundational engagement (new or restructuring business)</label>
+    <label><input type="checkbox" name="engagement" value="Ongoing advisory"> Ongoing advisory & bookkeeping</label>
+    <label><input type="checkbox" name="engagement" value="Tax services"> Tax preparation or tax-related support</label>
+    <label><input type="checkbox" name="engagement" value="Multiple areas"> Multiple areas apply</label>
+  </div>
 
-<label>What are you primarily looking for right now?</label>
-<div class="check-group">
-  <label><input type="checkbox" name="intent" value="Consultation"> A consultation to discuss next steps</label>
-  <label><input type="checkbox" name="intent" value="Pricing information"> General pricing or engagement information</label>
-  <label><input type="checkbox" name="intent" value="Callback"> A call back to discuss my situation</label>
-</div>
+  <label>What are you primarily looking for right now?</label>
+  <div class="check-group">
+    <label><input type="checkbox" name="intent" value="Consultation"> A consultation to discuss next steps</label>
+    <label><input type="checkbox" name="intent" value="Pricing information"> General pricing or engagement information</label>
+    <label><input type="checkbox" name="intent" value="Callback"> A call back to discuss my situation</label>
+  </div>
 
-<label>Which services are you interested in? (Select all that apply)</label>
-<div class="check-group">
-  <label><input type="checkbox" name="services" value="Advisory"> Business advisory</label>
-  <label><input type="checkbox" name="services" value="Bookkeeping"> Bookkeeping & financial organization</label>
-  <label><input type="checkbox" name="services" value="Tax"> Tax preparation & planning</label>
-  <label><input type="checkbox" name="services" value="Admin"> Administrative or documentation support</label>
-</div>
+  <label>Which services are you interested in? (Select all that apply)</label>
+  <div class="check-group">
+    <label><input type="checkbox" name="services" value="Advisory"> Business advisory</label>
+    <label><input type="checkbox" name="services" value="Bookkeeping"> Bookkeeping & financial organization</label>
+    <label><input type="checkbox" name="services" value="Tax"> Tax preparation & planning</label>
+    <label><input type="checkbox" name="services" value="Admin"> Administrative or documentation support</label>
+  </div>
 
-<div class="note">
-You are not committing to a specific engagement by submitting this form.
-All engagements are confirmed after a brief consultation.
-</div>
+  <div class="note">
+    Submitting this form does not commit you to a specific engagement.
+    All services are confirmed after a brief consultation.
+  </div>
 
-<button type="submit">Submit Inquiry</button>
+  <button type="submit">Submit Inquiry</button>
 
 </form>
 
