@@ -3,32 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact | InfraCore Advisory Group</title>
-<meta name="description" content="Start a conversation with InfraCore Advisory Group.">
-<link rel="icon" href="favicon.png">
+
+<meta name="description" content="Contact InfraCore Advisory Group to discuss advisory, bookkeeping, or tax services.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
-body{background:#f4f7fb;color:#1f2937}
-nav{background:#fff;border-bottom:1px solid #e5e7eb;padding:20px 80px;display:flex;justify-content:space-between;align-items:center}
+body{background:#f4f7fb;color:#1f2937;line-height:1.6}
+
+nav{
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  padding:20px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
 nav img{height:40px}
-nav a{margin-left:24px;text-decoration:none;color:#334155}
-.header{background:linear-gradient(180deg,#eef2ff,#f4f7fb);padding:120px 20px;text-align:center}
-.header h1{font-size:44px;color:#0f172a}
-.form-wrap{max-width:760px;margin:0 auto;padding:96px 20px}
-.form-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:40px}
-label{font-weight:600;font-size:14px}
-input,textarea{width:100%;padding:14px;margin:10px 0 22px;border-radius:8px;border:1px solid #d1d5db}
-button{background:#2563eb;color:#fff;border:none;padding:16px;border-radius:8px;font-size:16px;font-weight:600;width:100%}
-footer{background:#0f172a;color:#e5e7eb;padding:40px 20px;text-align:center;font-size:14px}
+nav a{margin-left:24px;text-decoration:none;color:#334155;font-weight:500}
+
+.header{
+  background:linear-gradient(180deg,#eef2ff,#f4f7fb);
+  padding:120px 20px;
+  text-align:center;
+  border-bottom:1px solid #e5e7eb
+}
+.header h1{font-size:44px;color:#0f172a;margin-bottom:12px}
+.header p{font-size:18px;color:#475569;max-width:760px;margin:0 auto}
+
+.form-wrap{
+  max-width:820px;
+  margin:0 auto;
+  padding:96px 20px
+}
+
+.form-card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:44px
+}
+
+label{
+  font-weight:600;
+  font-size:14px;
+  color:#0f172a;
+  display:block;
+  margin-bottom:10px
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+  width:100%;
+  padding:14px;
+  margin-bottom:26px;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+  font-size:15px
+}
+
+.check-group{
+  margin-bottom:28px
+}
+
+.check-group label{
+  font-weight:500;
+  font-size:15px;
+  color:#334155;
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:12px
+}
+
+.check-group input{
+  margin-right:10px;
+  margin-top:4px
+}
+
+.note{
+  background:#f8fafc;
+  border-left:4px solid #2563eb;
+  padding:18px;
+  font-size:14px;
+  color:#475569;
+  margin-bottom:28px
+}
+
+button{
+  background:#2563eb;
+  color:#ffffff;
+  border:none;
+  padding:16px;
+  border-radius:8px;
+  font-size:16px;
+  font-weight:600;
+  width:100%;
+  cursor:pointer
+}
+
+footer{
+  background:#0f172a;
+  color:#e5e7eb;
+  padding:40px 20px;
+  text-align:center;
+  font-size:14px
+}
+
+@media(max-width:900px){
+  nav{padding:18px 24px}
+  .header h1{font-size:34px}
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-<img src="F1907F4E-874B-4479-B34D-68F834B13316.png">
+<img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
 <div>
 <a href="/">Home</a>
 <a href="about.html">About</a>
@@ -40,22 +135,60 @@ footer{background:#0f172a;color:#e5e7eb;padding:40px 20px;text-align:center;font
 
 <section class="header">
 <h1>Start the Conversation</h1>
+<p>
+Use the form below to let us know what prompted you to reach out.
+This helps us review scope and determine next steps.
+</p>
 </section>
 
 <section class="form-wrap">
 <div class="form-card">
+
 <form action="https://formspree.io/f/xwvnkakl" method="POST">
+
 <input type="hidden" name="_redirect" value="https://www.infracoreadvisorygroup.com/thank-you.html">
+
 <label>Full Name</label>
 <input type="text" name="name" required>
-<label>Email</label>
+
+<label>Email Address</label>
 <input type="email" name="email" required>
-<label>Phone</label>
+
+<label>Phone Number</label>
 <input type="tel" name="phone">
-<label>How can we help?</label>
-<textarea name="message"></textarea>
+
+<label>What best describes what you’re reaching out about?</label>
+<div class="check-group">
+  <label><input type="checkbox" name="reason" value="Foundational engagement"> Foundational engagement (new or restructuring business)</label>
+  <label><input type="checkbox" name="reason" value="Ongoing advisory"> Ongoing advisory & bookkeeping support</label>
+  <label><input type="checkbox" name="reason" value="Tax services"> Tax preparation or tax-related support</label>
+  <label><input type="checkbox" name="reason" value="Multiple areas"> Multiple areas apply</label>
+</div>
+
+<label>What are you primarily looking for right now?</label>
+<div class="check-group">
+  <label><input type="checkbox" name="intent" value="Consultation"> A consultation to discuss next steps</label>
+  <label><input type="checkbox" name="intent" value="Pricing information"> General pricing or engagement information</label>
+  <label><input type="checkbox" name="intent" value="Callback"> A call back to discuss my situation</label>
+</div>
+
+<label>Which services are you interested in? (Select all that apply)</label>
+<div class="check-group">
+  <label><input type="checkbox" name="services" value="Advisory"> Business advisory</label>
+  <label><input type="checkbox" name="services" value="Bookkeeping"> Bookkeeping & financial organization</label>
+  <label><input type="checkbox" name="services" value="Tax"> Tax preparation & planning</label>
+  <label><input type="checkbox" name="services" value="Admin"> Administrative or documentation support</label>
+</div>
+
+<div class="note">
+You are not committing to a specific engagement by submitting this form.
+All engagements are confirmed after a brief consultation.
+</div>
+
 <button type="submit">Submit Inquiry</button>
+
 </form>
+
 </div>
 </section>
 
