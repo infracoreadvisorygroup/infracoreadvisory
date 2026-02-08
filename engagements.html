@@ -1,220 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Client Engagements | InfraCore Advisory Group</title>
+  <meta charset="UTF-8">
+  <title>Client Engagements | InfraCore Advisory Group</title>
 
-<meta name="description" content="Understand how InfraCore Advisory Group structures client engagements and determine the right fit for your business.">
-<link rel="icon" href="favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Understand how InfraCore Advisory Group structures client engagements and determines the appropriate advisory relationship.">
+  <meta property="og:title" content="Client Engagements | InfraCore Advisory Group">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.infracoreadvisorygroup.com/engagements.html">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
-body{background:#f4f7fb;color:#1f2937;line-height:1.6}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-nav{
-  background:#ffffff;
-  border-bottom:1px solid #e5e7eb;
-  padding:20px 80px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center
-}
-nav img{height:40px}
-nav a{margin-left:24px;text-decoration:none;color:#334155;font-weight:500}
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Inter, sans-serif; }
+    body { background: #f4f7fb; color: #1f2937; line-height: 1.6; }
 
-.header{
-  background:linear-gradient(180deg,#eef2ff,#f4f7fb);
-  padding:120px 20px;
-  text-align:center;
-  border-bottom:1px solid #e5e7eb
-}
-.header h1{font-size:44px;color:#0f172a;margin-bottom:16px}
-.header p{font-size:18px;color:#475569;max-width:820px;margin:0 auto}
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav img { height: 40px; }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #334155;
+      font-weight: 500;
+      font-size: 15px;
+    }
 
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:96px 20px;
-  display:grid;
-  gap:36px
-}
+    .header {
+      background: linear-gradient(180deg, #eef2ff 0%, #f4f7fb 100%);
+      padding: 120px 20px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .header h1 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    .header p {
+      font-size: 18px;
+      color: #475569;
+      max-width: 860px;
+      margin: 0 auto;
+    }
 
-.card{
-  background:#ffffff;
-  border:1px solid #e5e7eb;
-  border-radius:12px;
-  padding:40px
-}
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 96px 20px;
+      display: grid;
+      gap: 36px;
+    }
 
-.card h2{
-  font-size:26px;
-  color:#0f172a;
-  margin-bottom:12px
-}
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 40px;
+    }
 
-.card p{
-  font-size:16px;
-  color:#475569;
-  margin-bottom:22px
-}
+    .card h2 {
+      font-size: 26px;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
 
-.checklist{
-  list-style:none;
-  padding-left:0
-}
+    .card p {
+      font-size: 16px;
+      color: #475569;
+      margin-bottom: 22px;
+    }
 
-.checklist li{
-  display:flex;
-  align-items:flex-start;
-  margin-bottom:14px;
-  font-size:16px;
-  color:#334155
-}
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
 
-.checklist input{
-  margin-right:12px;
-  margin-top:4px
-}
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      font-size: 16px;
+      color: #334155;
+    }
 
-.note{
-  background:#f8fafc;
-  border-left:4px solid #2563eb;
-  padding:20px;
-  font-size:15px;
-  color:#475569;
-  margin-top:24px
-}
+    .checklist input {
+      margin-right: 12px;
+      margin-top: 4px;
+    }
 
-.cta-band{
-  background:#ffffff;
-  border-top:1px solid #e5e7eb;
-  padding:88px 20px;
-  text-align:center
-}
+    .divider-note {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 22px;
+      font-size: 15px;
+      color: #475569;
+      margin-top: 28px;
+    }
 
-.cta-band h2{font-size:32px;color:#0f172a;margin-bottom:16px}
-.cta-band p{font-size:17px;color:#475569;max-width:720px;margin:0 auto 32px}
+    .next-step {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 48px 40px;
+      text-align: center;
+    }
 
-.cta{
-  background:#2563eb;
-  color:#ffffff;
-  padding:16px 32px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
-  font-size:16px;
-  display:inline-block
-}
+    .next-step h3 {
+      font-size: 28px;
+      color: #0f172a;
+      margin-bottom: 14px;
+    }
 
-footer{
-  background:#0f172a;
-  color:#e5e7eb;
-  padding:40px 20px;
-  text-align:center;
-  font-size:14px
-}
+    .next-step p {
+      font-size: 16px;
+      color: #475569;
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
 
-@media(max-width:900px){
-  nav{padding:18px 24px}
-  .header h1{font-size:34px}
-}
-</style>
+    .cta {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      nav { padding: 18px 24px; }
+      .header h1 { font-size: 34px; }
+    }
+  </style>
 </head>
 
 <body>
 
 <nav>
-<img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
-<div>
-<a href="/">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="engagements.html">Engagements</a>
-<a href="contact.html">Contact</a>
-</div>
+  <img src="F1907F4E-874B-4479-B34D-68F834B13316.png" alt="InfraCore Advisory Group">
+  <div>
+    <a href="/">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="engagements.html">Engagements</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <section class="header">
-<h1>Client Engagements</h1>
-<p>
-Our engagements are structured to reflect business complexity, advisory involvement,
-and level of ongoing support. Review the criteria below to determine alignment.
-</p>
+  <h1>Client Engagements</h1>
+  <p>
+    Our work is structured through defined engagement types. Many businesses
+    identify with more than one area — the purpose of this page is to help
+    clarify where advisory support may be most valuable.
+  </p>
 </section>
 
 <section class="container">
 
-<!-- FOUNDATIONAL -->
-<div class="card">
-<h2>Foundational Engagement</h2>
-<p>Designed for new or transitioning businesses that need structure and clarity.</p>
+  <div class="card">
+    <h2>Foundational Engagement</h2>
+    <p>
+      Designed for new or transitioning businesses that need structure,
+      clarity, and proper positioning before moving forward.
+    </p>
+    <ul class="checklist">
+      <li><input type="checkbox"> I am starting a new business or restructuring an existing one</li>
+      <li><input type="checkbox"> My financial records are incomplete or inconsistent</li>
+      <li><input type="checkbox"> I need guidance on setup, compliance, or tax positioning</li>
+      <li><input type="checkbox"> I want a clear roadmap before making decisions</li>
+      <li><input type="checkbox"> I am looking for focused, short-term advisory support</li>
+    </ul>
+  </div>
 
-<ul class="checklist">
-<li><input type="checkbox"> I am starting a new business or restructuring an existing one</li>
-<li><input type="checkbox"> My financial records are incomplete or inconsistent</li>
-<li><input type="checkbox"> I need guidance on setup, compliance, or tax positioning</li>
-<li><input type="checkbox"> I want a clear roadmap before moving forward</li>
-<li><input type="checkbox"> I am looking for focused, short-term advisory support</li>
-</ul>
+  <div class="card">
+    <h2>Ongoing Advisory Relationship</h2>
+    <p>
+      Designed for established businesses seeking ongoing clarity,
+      organization, and strategic support.
+    </p>
+    <ul class="checklist">
+      <li><input type="checkbox"> I have an active business with recurring activity</li>
+      <li><input type="checkbox"> I need consistent bookkeeping and financial organization</li>
+      <li><input type="checkbox"> I value year-round advisory access</li>
+      <li><input type="checkbox"> I want proactive guidance, not just compliance</li>
+      <li><input type="checkbox"> I am seeking a long-term advisory relationship</li>
+    </ul>
+  </div>
 
-<div class="note">
-This engagement establishes the foundation required before ongoing advisory or bookkeeping begins.
-</div>
-</div>
+  <div class="card">
+    <h2>Tax & Compliance Engagement</h2>
+    <p>
+      Designed for individuals and businesses focused on filings,
+      compliance, and tax-related decision support.
+    </p>
+    <ul class="checklist">
+      <li><input type="checkbox"> I need business and/or individual tax preparation</li>
+      <li><input type="checkbox"> I want guidance on estimated payments</li>
+      <li><input type="checkbox"> My filings involve multiple forms or entities</li>
+      <li><input type="checkbox"> I want to reduce surprises and avoid issues</li>
+      <li><input type="checkbox"> I may transition into advisory support later</li>
+    </ul>
+  </div>
 
-<!-- ONGOING -->
-<div class="card">
-<h2>Ongoing Advisory Relationship</h2>
-<p>Designed for established businesses seeking ongoing clarity and support.</p>
+  <div class="divider-note">
+    It is common for businesses to identify with more than one engagement type.
+    Selections above are not used to place you into a predefined package, but to
+    highlight areas where advisory support may be appropriate.
+  </div>
 
-<ul class="checklist">
-<li><input type="checkbox"> I have an active business with recurring activity</li>
-<li><input type="checkbox"> I need consistent bookkeeping and financial organization</li>
-<li><input type="checkbox"> I value year-round advisory access</li>
-<li><input type="checkbox"> I want proactive guidance, not just compliance</li>
-<li><input type="checkbox"> I am seeking a long-term advisory relationship</li>
-</ul>
+  <div class="next-step">
+    <h3>Next Step</h3>
+    <p>
+      If any of the above applies to your situation — whether in one area or several —
+      the next step is a brief consultation to confirm scope and recommend the most
+      appropriate engagement structure.
+    </p>
+    <a href="contact.html" class="cta">Request a Consultation</a>
+  </div>
 
-<div class="note">
-Ongoing engagements are structured monthly and evolve as the business grows.
-</div>
-</div>
-
-<!-- TAX -->
-<div class="card">
-<h2>Tax & Compliance Engagement</h2>
-<p>Designed for individuals and businesses focused on filings and compliance.</p>
-
-<ul class="checklist">
-<li><input type="checkbox"> I need business and/or individual tax preparation</li>
-<li><input type="checkbox"> I want guidance on estimated payments</li>
-<li><input type="checkbox"> My filings involve multiple forms or entities</li>
-<li><input type="checkbox"> I want to reduce surprises and avoid issues</li>
-<li><input type="checkbox"> I may transition into advisory support later</li>
-</ul>
-
-<div class="note">
-Tax engagements may stand alone or support other advisory relationships.
-</div>
-</div>
-
-</section>
-
-<section class="cta-band">
-<h2>Next Step</h2>
-<p>
-If one or more of these engagement types feels aligned, the next step is a brief
-consultation to confirm scope and structure.
-</p>
-<a class="cta" href="contact.html">Request a Consultation</a>
 </section>
 
 <footer>
-Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
-Serving entrepreneurs and small businesses nationwide
+  Strategic Business Advisory • Bookkeeping • Tax Preparation<br>
+  Serving entrepreneurs and small businesses nationwide
 </footer>
 
 </body>
