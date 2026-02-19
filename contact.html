@@ -5,140 +5,138 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | InfraCore Advisory Group</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
---primary:#2f5ea8;
---dark:#1f2c3d;
---light:#f5f7fb;
---text:#2b2b2b;
+
+/* GLOBAL */
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+    background:#f5f7fb;
+    color:#0f1c2e;
 }
+a{text-decoration:none}
 
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
-
-body{color:var(--text);line-height:1.6;}
-
+/* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 24px;
-border-bottom:1px solid #eee;
-position:sticky;
-top:0;
-background:white;
-z-index:10;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+nav img{height:42px}
+nav .links a{
+    margin-left:28px;
+    font-weight:600;
+    color:#0f1c2e;
 }
 
-nav img{height:38px;}
-
-nav a{
-text-decoration:none;
-color:#333;
-margin-left:20px;
-font-weight:500;
-}
-
-nav a:hover{color:var(--primary);}
-
+/* HERO */
 .hero{
-background:var(--light);
-padding:70px 20px;
-text-align:center;
+    background:white;
+    padding:70px 20px 40px;
+    text-align:center;
+}
+.hero h1{font-size:40px;margin-bottom:10px;}
+.hero p{color:#4b5563;font-size:18px;}
+
+/* CONTACT BUTTONS */
+.contact-box{
+    max-width:700px;
+    margin:40px auto;
+    padding:0 20px;
 }
 
-.hero h1{
-font-size:38px;
-margin-bottom:10px;
+.button{
+    display:block;
+    margin:15px 0;
+    padding:18px;
+    border-radius:12px;
+    color:white;
+    font-weight:600;
+    text-align:center;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-text-align:center;
-}
+.call{background:#29b765;}
+.text{background:#3b7ddd;}
+.email{background:#6a5acd;}
+.map{background:#111827;}
 
-.contact-btn{
-display:block;
-margin:14px auto;
-padding:16px;
-border-radius:10px;
-text-decoration:none;
-font-weight:600;
-max-width:400px;
+/* SCHEDULER */
+.schedule{
+    max-width:900px;
+    margin:60px auto;
+    padding:0 20px;
+    text-align:center;
 }
-
-.call{background:#22c55e;color:white;}
-.text{background:#3b82f6;color:white;}
-.email{background:#6366f1;color:white;}
-.map{background:#111827;color:white;}
 
 iframe{
-margin-top:40px;
-border:none;
-width:100%;
-height:720px;
-border-radius:14px;
+    width:100%;
+    height:720px;
+    border:none;
+    border-radius:16px;
 }
 
+/* FOOTER */
 footer{
-background:var(--dark);
-color:white;
-margin-top:60px;
-padding:40px 20px;
-text-align:center;
+    background:#0f1c2e;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
 }
-
 footer a{
-color:#9ec1ff;
-text-decoration:none;
-display:inline-block;
-margin:6px 10px;
+    color:#9ec3ff;
+    display:block;
+    margin:6px 0;
 }
 
-footer a:hover{text-decoration:underline;}
+/* MOBILE */
+@media(max-width:900px){
+.hero h1{font-size:32px}
+nav{padding:18px 20px}
+}
 
 </style>
 </head>
+
 <body>
 
 <nav>
-<img src="logo.png">
-<div>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</div>
+    <img src="logo.png.PNG">
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
 <section class="hero">
-<h1>Contact InfraCore Advisory Group</h1>
-<p>Reach out or schedule directly below</p>
+    <h1>Contact InfraCore Advisory Group</h1>
+    <p>Reach out directly or schedule below</p>
 </section>
 
-<div class="container">
-
-<a class="contact-btn call" href="tel:9362834424">📞 Call (936) 283-4424</a>
-<a class="contact-btn text" href="sms:9362834424">💬 Text Us</a>
-<a class="contact-btn email" href="mailto:contact@infracoreadvisorygroup.com">✉ Email Us</a>
-<a class="contact-btn map" href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX+77301">📍 Get Directions</a>
-
-<iframe src="https://calendly.com/contact-infracoreadvisorygroup/30min"></iframe>
-
+<div class="contact-box">
+    <a class="button call" href="tel:19362834424">📞 Call (936) 283-4424</a>
+    <a class="button text" href="sms:19362834424">💬 Text Us</a>
+    <a class="button email" href="mailto:contact@infracoreadvisorygroup.com">✉️ Email Us</a>
+    <a class="button map" href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX" target="_top">
+        📍 Get Directions
+    </a>
 </div>
 
+<section class="schedule">
+    <h2>Schedule a Financial Review</h2>
+    <p>Choose a time that works for you.</p>
+
+    <iframe src="https://calendly.com/contact-infracoreadvisorygroup/20min"></iframe>
+</section>
+
 <footer>
-<p><strong>InfraCore Advisory Group</strong></p>
-
-<a href="tel:9362834424">(936) 283-4424</a>
-<a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-<a href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX+77301">1111 FM 1485 STE 4031, Conroe TX</a>
-
-<p style="margin-top:20px;font-size:13px;opacity:.7;">
-© 2026 InfraCore Advisory Group
-</p>
+    <h3>InfraCore Advisory Group</h3>
+    <a href="tel:19362834424">(936) 283-4424</a>
+    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+    <div>1111 FM 1485 STE 4031, Conroe TX</div>
 </footer>
 
 </body>
