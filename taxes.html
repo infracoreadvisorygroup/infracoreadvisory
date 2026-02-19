@@ -5,165 +5,152 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tax Filing | InfraCore Advisory Group</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
---primary:#2f5ea8;
---dark:#1f2c3d;
---light:#f5f7fb;
---text:#2b2b2b;
+
+/* GLOBAL */
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+    background:#f5f7fb;
+    color:#0f1c2e;
 }
+a{text-decoration:none}
 
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
-
-body{color:var(--text);line-height:1.6;}
-
+/* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 24px;
-border-bottom:1px solid #eee;
-position:sticky;
-top:0;
-background:white;
-z-index:10;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+nav img{height:42px}
+nav .links a{
+    margin-left:28px;
+    font-weight:600;
+    color:#0f1c2e;
 }
 
-nav img{height:38px;}
-
-nav a{
-text-decoration:none;
-color:#333;
-margin-left:20px;
-font-weight:500;
-}
-
-nav a:hover{color:var(--primary);}
-
+/* HERO */
 .hero{
-background:var(--light);
-padding:70px 20px;
-text-align:center;
+    background:white;
+    padding:70px 20px 40px;
+    text-align:center;
 }
+.hero h1{font-size:40px;margin-bottom:10px;}
+.hero p{color:#4b5563;font-size:18px;}
 
-.hero h1{
-font-size:38px;
-margin-bottom:10px;
-}
-
+/* CONTENT */
 .section{
-max-width:900px;
-margin:auto;
-padding:50px 20px;
+    max-width:900px;
+    margin:50px auto;
+    padding:0 20px;
 }
 
 .section h2{
-margin-bottom:15px;
-color:var(--primary);
+    margin-bottom:12px;
 }
 
-.bullets{
-margin-top:20px;
+.section p{
+    color:#4b5563;
+    margin-bottom:20px;
 }
 
-.bullets li{
-margin-bottom:12px;
+ul{
+    margin:20px 0 30px 18px;
+    line-height:1.7;
 }
 
+/* CTA */
 .cta{
-background:var(--light);
-padding:60px 20px;
-text-align:center;
+    text-align:center;
+    padding:80px 20px;
+    background:#e9eef7;
 }
 
-.btn{
-display:inline-block;
-background:var(--primary);
-color:white;
-padding:14px 22px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-margin-top:20px;
+.button{
+    display:inline-block;
+    background:#2f5ea8;
+    color:white;
+    padding:14px 24px;
+    border-radius:10px;
+    font-weight:600;
 }
 
+/* FOOTER */
 footer{
-background:var(--dark);
-color:white;
-margin-top:60px;
-padding:40px 20px;
-text-align:center;
+    background:#0f1c2e;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
 }
-
 footer a{
-color:#9ec1ff;
-text-decoration:none;
-display:inline-block;
-margin:6px 10px;
+    color:#9ec3ff;
+    display:block;
+    margin:6px 0;
 }
 
-footer a:hover{text-decoration:underline;}
+/* MOBILE */
+@media(max-width:900px){
+.hero h1{font-size:32px}
+nav{padding:18px 20px}
+}
 
 </style>
 </head>
+
 <body>
 
 <nav>
-<img src="logo.png">
-<div>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</div>
+    <img src="logo.png.PNG">
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
 <section class="hero">
-<h1>Taxes Filed Correctly. No Surprises.</h1>
-<p>Your books and taxes should work together — not against each other.</p>
+    <h1>Taxes Filed Correctly</h1>
+    <p>No surprises. No scrambling. Just clarity.</p>
 </section>
 
 <div class="section">
-<h2>What We Handle</h2>
+    <h2>What We Handle</h2>
+    <p>Your business taxes prepared and filed accurately from organized records.</p>
 
-<ul class="bullets">
-<li>Business tax preparation</li>
-<li>Business tax filing</li>
-<li>Schedule C returns</li>
-<li>S-Corp returns</li>
-<li>Estimated tax guidance</li>
-<li>Year-end cleanup adjustments</li>
-</ul>
+    <ul>
+        <li>Business tax preparation</li>
+        <li>Business tax filing</li>
+        <li>Schedule C returns</li>
+        <li>S-Corp returns</li>
+        <li>Estimated tax guidance</li>
+        <li>Year-end adjustments</li>
+    </ul>
 </div>
 
 <div class="section">
-<h2>Why Clients Come To Us</h2>
-<p>
-Most tax issues start with bad bookkeeping.  
-Because we manage both, your return is accurate and you know what to expect before filing — not after.
-</p>
+    <h2>Why Clients Come To Us</h2>
+    <p>
+    Most tax issues start with bad bookkeeping.
+    Because we manage both, you know what to expect before filing — not after.
+    </p>
 </div>
 
 <section class="cta">
-<h2>Let’s review your tax situation</h2>
-<p>We’ll explain what you owe and why.</p>
-
-<a class="btn" href="https://calendly.com/contact-infracoreadvisorygroup/30min">
-Schedule a Financial Review
-</a>
+    <h2>Let’s review your tax situation</h2>
+    <p>We’ll explain what you owe and why.</p>
+    <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
+        Schedule a Financial Review
+    </a>
 </section>
 
 <footer>
-<p><strong>InfraCore Advisory Group</strong></p>
-
-<a href="tel:9362834424">📞 (936) 283-4424</a>
-<a href="mailto:contact@infracoreadvisorygroup.com">✉ contact@infracoreadvisorygroup.com</a>
-<a href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX+77301">📍 1111 FM 1485 STE 4031, Conroe TX</a>
-
-<p style="margin-top:20px;font-size:13px;opacity:.7;">
-© 2026 InfraCore Advisory Group
-</p>
+    <h3>InfraCore Advisory Group</h3>
+    <a href="tel:19362834424">(936) 283-4424</a>
+    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+    <div>1111 FM 1485 STE 4031, Conroe TX</div>
 </footer>
 
 </body>
