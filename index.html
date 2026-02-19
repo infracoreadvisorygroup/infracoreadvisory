@@ -3,96 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>InfraCore Advisory Group</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
---navy:#0F2747;
---blue:#2F5FA7;
---light:#F5F7FA;
---dark:#1a1a1a;
+--primary:#2f5ea8;
+--dark:#1f2c3d;
+--light:#f5f7fb;
+--text:#2b2b2b;
 }
 
-body{margin:0;font-family:'Inter',sans-serif;background:var(--light);color:var(--dark);}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:'Inter',sans-serif;
+}
 
-/* NAV /
-.nav{position:fixed;top:0;width:100%;background:white;padding:14px 6%;display:flex;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.05);z-index:1000;}
-.nav img{height:42px}
+body{
+color:var(--text);
+background:white;
+line-height:1.6;
+}
 
-/ HERO /
-.hero{height:100vh;background:url('hero.jpeg.jpg') no-repeat right center;background-size:cover;display:flex;align-items:center;}
-.overlay{background:rgba(15,39,71,.65);width:100%;height:100%;display:flex;align-items:center;}
-.content{max-width:620px;margin-left:8%;color:white}
-h1{font-family:'Poppins',sans-serif;font-size:48px;line-height:1.2;margin-bottom:20px}
-.hero p{font-size:18px;margin-bottom:18px}
-.trust{font-size:14px;opacity:.9;margin-bottom:30px}
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
 
-.btn{background:var(--blue);color:white;padding:16px 36px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 24px;
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #eee;
+}
 
-/ SECTIONS /
-.section{padding:90px 8%;background:white}
-.alt{background:var(--light)}
-h2{font-family:'Poppins',sans-serif;color:var(--navy);font-size:34px;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:40px}
-.card h3{color:var(--navy);font-family:'Poppins',sans-serif}
-.card p{font-size:15px;line-height:1.6}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+color:var(--dark);
+text-decoration:none;
+}
 
-/ FOOTER /
-.footer{background:var(--navy);color:white;padding:60px 6%;text-align:center}
-.contact-btn{display:block;margin:12px auto;padding:14px;border-radius:8px;background:white;color:var(--navy);text-decoration:none;font-weight:600;max-width:320px}
+.logo img{
+height:38px;
+}
 
-/ MOBILE */
-@media(max-width:768px){
-.hero{text-align:center;background-position:65% top}
-.overlay{justify-content:center}
-.content{margin:0 6%}
-h1{font-size:30px}
-.grid{grid-template-columns:1fr}
+.menu{
+display:flex;
+gap:26px;
+}
+
+.menu a{
+text-decoration:none;
+color:var(--dark);
+font-weight:500;
+}
+
+.menu a:hover{
+color:var(--primary);
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(31,44,61,.65),rgba(31,44,61,.65)),
+url('hero.jpg') center/cover;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:42px;
+font-weight:700;
+margin-bottom:16px;
+}
+
+.hero p{
+font-size:18px;
+opacity:.95;
+margin-bottom:26px;
+}
+
+.btn{
+display:inline-block;
+background:var(--primary);
+color:white;
+padding:16px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* SECTIONS */
+.section{
+padding:70px 20px;
+}
+
+.section.light{
+background:var(--light);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:26px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+/* FOOTER */
+footer{
+background:var(--dark);
+color:white;
+padding:50px 20px;
+margin-top:60px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+}
+
+.contact-links{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+.hero h1{font-size:30px}
+.menu{gap:14px;font-size:14px}
 }
 </style>
 </head>
 
 <body>
 
-<div class="nav">
-<img src="logo.png.PNG">
+<nav>
+<a class="logo" href="index.html">
+<img src="logo.png">
+InfraCore Advisory Group
+</a>
+
+<div class="menu">
+<a href="services.html">Services</a>
+<a href="bookkeeping.html">Bookkeeping</a>
+<a href="taxes.html">Taxes</a>
+<a href="advisory.html">Advisory</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<div class="container">
+<!-- PAGE CONTENT GOES BELOW -->
 </div>
 
-<section class="hero">
-<div class="overlay">
-<div class="content">
-<h1>Understand your numbers. Run your business with confidence.</h1>
-<p>Bookkeeping, tax filing, and real financial guidance so you stop guessing where the money went.</p>
-<div class="trust">Clean books • Filed taxes • Better decisions</div>
-<a class="btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-infracoreadvisorygroup/30min'});return false;">Schedule a Financial Review</a>
-</div>
-</div>
-</section>
+<footer>
+<div class="container">
 
-<section class="section">
-<h2>More than bookkeeping</h2>
-<div class="grid">
-<div class="card"><h3>Clean Books</h3><p>Monthly reconciliations so your financials are accurate and reliable.</p></div>
-<div class="card"><h3>File Taxes</h3><p>We prepare and file your business taxes correctly — no scrambling.</p></div>
-<div class="card"><h3>Guidance</h3><p>Know your profit, pricing problems, and cash flow every month.</p></div>
+<h3>InfraCore Advisory Group</h3>
+
+<div class="contact-links">
+<a href="tel:19362834424">(936) 283-4424</a>
+<a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+<a href="https://calendly.com/contact-infracoreadvisorygroup/30min">Schedule Appointment</a>
+<p>1111 FM 1485 STE 4031, Conroe TX</p>
 </div>
-</section>
 
-<section class="section alt">
-<h2>Most owners don’t know if they’re profitable</h2>
-<p>Bank balance isn’t profit. Pricing mistakes, tax surprises, and cash flow issues are common. That’s what we fix.</p>
-</section>
+<p style="margin-top:20px;opacity:.7;">© 2026 InfraCore Advisory Group</p>
 
-<footer class="footer">
-<h2>Contact</h2>
-<a class="contact-btn" href="tel:+19362834424">📞 (936) 283-4424</a>
-<a class="contact-btn" href="sms:+19362834424">💬 Text Us</a>
-<a class="contact-btn" href="mailto:contact@infracoreadvisorygroup.com">✉️ contact@infracoreadvisorygroup.com</a>
-<a class="contact-btn" href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX+77301">📍 1111 FM 1485 STE 4031, Conroe TX</a>
-<p style="margin-top:20px;font-size:13px;opacity:.8">© 2026 InfraCore Advisory Group</p>
+</div>
 </footer>
 
 </body>
