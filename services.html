@@ -5,189 +5,201 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | InfraCore Advisory Group</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
---primary:#2f5ea8;
---dark:#1f2c3d;
---light:#f5f7fb;
---text:#2b2b2b;
+
+/* ===== GLOBAL ===== */
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+    background:#f5f7fb;
+    color:#0f1c2e;
 }
 
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
+a{text-decoration:none}
 
-body{color:var(--text);background:white;line-height:1.6;}
-
-.container{max-width:1100px;margin:auto;padding:20px;}
-
+/* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 24px;
-border-bottom:1px solid #eee;
-position:sticky;
-top:0;
-background:white;
-z-index:10;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
-nav img{height:38px;}
+nav img{height:42px}
 
-nav a{
-text-decoration:none;
-color:#333;
-margin-left:20px;
-font-weight:500;
+nav .links a{
+    margin-left:28px;
+    font-weight:600;
+    color:#0f1c2e;
 }
 
-nav a:hover{color:var(--primary);}
-
-.hero{
-background:var(--light);
-padding:70px 20px;
-text-align:center;
+/* HERO HEADER */
+.header{
+    text-align:center;
+    padding:70px 20px 40px;
+    background:white;
 }
 
-.hero h1{
-font-size:38px;
-margin-bottom:10px;
+.header h1{
+    font-size:40px;
+    margin-bottom:10px;
 }
 
-.hero p{
-font-size:18px;
-color:#555;
-max-width:600px;
-margin:auto;
+.header p{
+    color:#4b5563;
+    font-size:18px;
 }
 
+/* CARDS */
 .services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:50px;
+    padding:70px 8%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
 }
 
 .card{
-border:1px solid #e5e7eb;
-border-radius:14px;
-padding:28px;
-transition:.2s;
-background:white;
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 10px 28px rgba(0,0,0,.06);
+    transition:.2s;
 }
 
 .card:hover{
-transform:translateY(-5px);
-box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transform:translateY(-6px);
 }
 
-.card h3{
-margin-bottom:10px;
-color:var(--primary);
+.card h2{
+    margin-bottom:12px;
 }
 
-.card p{margin-bottom:15px;}
-
-.btn{
-display:inline-block;
-background:var(--primary);
-color:white;
-padding:12px 20px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
+.card p{
+    color:#4b5563;
+    margin-bottom:20px;
 }
 
-.btn:hover{opacity:.9;}
+.button{
+    display:inline-block;
+    background:#2f5ea8;
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+}
 
+/* CTA */
 .cta{
-text-align:center;
-padding:60px 20px;
-background:var(--light);
-margin-top:60px;
+    text-align:center;
+    padding:80px 20px;
+    background:#e9eef7;
 }
 
-.cta h2{margin-bottom:15px;}
+.cta h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
 
+.cta p{
+    color:#4b5563;
+    margin-bottom:25px;
+}
+
+/* FOOTER */
 footer{
-background:var(--dark);
-color:white;
-margin-top:60px;
-padding:40px 20px;
-text-align:center;
+    background:#0f1c2e;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
 }
 
 footer a{
-color:#9ec1ff;
-text-decoration:none;
-display:inline-block;
-margin:6px 10px;
+    color:#9ec3ff;
+    display:block;
+    margin:6px 0;
 }
 
-footer a:hover{text-decoration:underline;}
+/* MOBILE */
+@media(max-width:900px){
+    nav{padding:18px 20px}
+    .header h1{font-size:32px}
+}
 
 </style>
 </head>
+
 <body>
 
+<!-- NAV -->
 <nav>
-<img src="logo.png">
-<div>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</div>
+    <img src="logo.png.PNG">
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
-<section class="hero">
-<h1>Services Built Around Business Owners</h1>
-<p>Not just reports — real financial clarity so you know exactly where your business stands and what to do next.</p>
+<!-- HEADER -->
+<section class="header">
+    <h1>Services</h1>
+    <p>Not just bookkeeping — real financial clarity for your business.</p>
 </section>
 
-<div class="container">
+<!-- SERVICES -->
+<section class="services">
+    <div class="grid">
 
-<div class="services">
+        <div class="card">
+            <h2>Bookkeeping</h2>
+            <p>
+            Accurate monthly financials, reconciliations, and categorized transactions
+            so you always know where your money is going.
+            </p>
+            <a class="button" href="bookkeeping.html">View Bookkeeping</a>
+        </div>
 
-<div class="card">
-<h3>Bookkeeping</h3>
-<p>Monthly reconciliations, categorized transactions, and clean financials you can rely on.</p>
-<a class="btn" href="bookkeeping.html">Learn More</a>
-</div>
+        <div class="card">
+            <h2>Tax Filing</h2>
+            <p>
+            Business taxes prepared and filed correctly — no surprises,
+            no missed deductions, no deadline stress.
+            </p>
+            <a class="button" href="taxes.html">View Tax Services</a>
+        </div>
 
-<div class="card">
-<h3>Tax Filing</h3>
-<p>We prepare and file your business taxes correctly so you avoid surprises and penalties.</p>
-<a class="btn" href="taxes.html">Learn More</a>
-</div>
+        <div class="card">
+            <h2>Advisory</h2>
+            <p>
+            Monthly guidance to improve profit, pricing, and cash flow —
+            the difference between surviving and growing.
+            </p>
+            <a class="button" href="advisory.html">View Advisory</a>
+        </div>
 
-<div class="card">
-<h3>Advisory & Guidance</h3>
-<p>Understand profit, pricing problems, and cash flow — and what actions to take each month.</p>
-<a class="btn" href="advisory.html">Learn More</a>
-</div>
+    </div>
+</section>
 
-</div>
-
-</div>
-
+<!-- CTA -->
 <section class="cta">
-<h2>Let’s look at your numbers</h2>
-<p>You’ll leave the call knowing exactly what your next step should be.</p>
-<br>
-<a class="btn" href="https://calendly.com/contact-infracoreadvisorygroup/30min">Schedule a Financial Review</a>
+    <h2>Not sure what you need?</h2>
+    <p>We’ll figure it out together in a quick call.</p>
+    <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
+        Schedule a Financial Review
+    </a>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p><strong>InfraCore Advisory Group</strong></p>
-
-<a href="tel:9362834424">📞 (936) 283-4424</a>
-<a href="mailto:contact@infracoreadorygroup.com">✉ contact@infracoreadvisorygroup.com</a>
-<a href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX+77301">📍 1111 FM 1485 STE 4031, Conroe TX</a>
-
-<p style="margin-top:20px;font-size:13px;opacity:.7;">
-© 2026 InfraCore Advisory Group
-</p>
+    <h3>InfraCore Advisory Group</h3>
+    <a href="tel:19362834424">(936) 283-4424</a>
+    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+    <div>1111 FM 1485 STE 4031, Conroe TX</div>
 </footer>
 
 </body>
