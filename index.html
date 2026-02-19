@@ -3,197 +3,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>InfraCore Advisory Group</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
---primary:#2f5ea8;
---dark:#1f2c3d;
---light:#f5f7fb;
---text:#2b2b2b;
-}
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-font-family:'Inter',sans-serif;
-}
-
+/* ===== GLOBAL ===== */
 body{
-color:var(--text);
-background:white;
-line-height:1.6;
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    background:#f5f7fb;
+    color:#0f1c2e;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
+a{text-decoration:none}
 
-/* NAV */
+/* ===== NAV ===== */
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 24px;
-background:white;
-position:sticky;
-top:0;
-z-index:1000;
-border-bottom:1px solid #eee;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:600;
-color:var(--dark);
-text-decoration:none;
+nav img{height:42px}
+
+nav .links a{
+    margin-left:28px;
+    font-weight:600;
+    color:#0f1c2e;
 }
 
-.logo img{
-height:38px;
-}
-
-.menu{
-display:flex;
-gap:26px;
-}
-
-.menu a{
-text-decoration:none;
-color:var(--dark);
-font-weight:500;
-}
-
-.menu a:hover{
-color:var(--primary);
-}
-
-/* HERO */
+/* ===== HERO ===== */
 .hero{
-background:linear-gradient(rgba(31,44,61,.65),rgba(31,44,61,.65)),
-url('hero.jpg') center/cover;
-color:white;
-text-align:center;
-padding:120px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    padding:80px 8%;
+    background:#ffffff;
 }
 
-.hero h1{
-font-size:42px;
-font-weight:700;
-margin-bottom:16px;
+.hero-text{max-width:520px}
+
+.hero-text h1{
+    font-size:44px;
+    line-height:1.2;
+    margin-bottom:20px;
 }
 
-.hero p{
-font-size:18px;
-opacity:.95;
-margin-bottom:26px;
+.sub{
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:20px;
 }
 
-.btn{
-display:inline-block;
-background:var(--primary);
-color:white;
-padding:16px 28px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
+.points{
+    list-style:none;
+    padding:0;
+    margin:20px 0 30px;
 }
 
-/* SECTIONS */
-.section{
-padding:70px 20px;
+.points li{
+    margin:10px 0;
+    font-weight:600;
+    color:#2f5ea8;
 }
 
-.section.light{
-background:var(--light);
+.cta{
+    display:inline-block;
+    padding:16px 28px;
+    background:#2f5ea8;
+    color:white;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* IMAGE */
+.hero-image img{
+    width:420px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ===== SERVICES PREVIEW ===== */
+.services{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:34px;
+    margin-bottom:50px;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:28px;
-margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
 .card{
-background:white;
-padding:26px;
-border-radius:10px;
-box-shadow:0 8px 20px rgba(0,0,0,.05);
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
 }
 
-/* FOOTER */
+.card h3{margin-bottom:10px}
+
+.card p{
+    color:#4b5563;
+    margin-bottom:18px;
+}
+
+.learn{
+    color:#2f5ea8;
+    font-weight:600;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section{
+    background:#e9eef7;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta-section h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.cta-section p{
+    color:#4b5563;
+    margin-bottom:30px;
+}
+
+/* ===== FOOTER ===== */
 footer{
-background:var(--dark);
-color:white;
-padding:50px 20px;
-margin-top:60px;
+    background:#0f1c2e;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
 }
 
 footer a{
-color:white;
-text-decoration:none;
+    color:#9ec3ff;
+    display:block;
+    margin:6px 0;
 }
 
-.contact-links{
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:10px;
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    .hero-text h1{font-size:34px}
+    nav{padding:18px 20px}
 }
 
-/* MOBILE */
-@media(max-width:700px){
-.hero h1{font-size:30px}
-.menu{gap:14px;font-size:14px}
-}
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
-<a class="logo" href="index.html">
-<img src="logo.png">
-InfraCore Advisory Group
-</a>
-
-<div class="menu">
-<a href="services.html">Services</a>
-<a href="bookkeeping.html">Bookkeeping</a>
-<a href="taxes.html">Taxes</a>
-<a href="advisory.html">Advisory</a>
-<a href="contact.html">Contact</a>
-</div>
+    <img src="logo.png.PNG" alt="InfraCore Logo">
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
-<div class="container">
-<!-- PAGE CONTENT GOES BELOW -->
-</div>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Understand your numbers.<br>Run your business with confidence.</h1>
 
+        <p class="sub">
+            Bookkeeping, tax filing, and real financial guidance so you stop guessing where the money went.
+        </p>
+
+        <ul class="points">
+            <li>Clean books</li>
+            <li>Filed taxes</li>
+            <li>Better decisions</li>
+        </ul>
+
+        <a href="contact.html#schedule" class="cta">Schedule a Financial Review</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="hero.jpeg.jpg" alt="Advisor">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>More than bookkeeping</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Bookkeeping</h3>
+            <p>Monthly reconciliations and clean financials you can trust.</p>
+            <a class="learn" href="bookkeeping.html">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <h3>Tax Filing</h3>
+            <p>Prepared and filed correctly so you never stress deadlines.</p>
+            <a class="learn" href="taxes.html">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <h3>Advisory</h3>
+            <p>Know profit, cash flow, and what to fix every month.</p>
+            <a class="learn" href="advisory.html">Learn More →</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="schedule">
+    <h2>Let’s look at your numbers</h2>
+    <p>You’ll leave the call knowing exactly what your next step should be.</p>
+    <a class="cta" href="https://calendly.com/contact-infracoreadvisorygroup/20min">Schedule a Financial Review</a>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<div class="container">
+    <h3>InfraCore Advisory Group</h3>
 
-<h3>InfraCore Advisory Group</h3>
-
-<div class="contact-links">
-<a href="tel:19362834424">(936) 283-4424</a>
-<a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-<a href="https://calendly.com/contact-infracoreadvisorygroup/30min">Schedule Appointment</a>
-<p>1111 FM 1485 STE 4031, Conroe TX</p>
-</div>
-
-<p style="margin-top:20px;opacity:.7;">© 2026 InfraCore Advisory Group</p>
-
-</div>
+    <a href="tel:19362834424">(936) 283-4424</a>
+    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+    <div>1111 FM 1485 STE 4031, Conroe TX</div>
 </footer>
 
 </body>
