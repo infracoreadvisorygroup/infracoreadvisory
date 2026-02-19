@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfraCore Advisory Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--navy:#0F2747;
+--blue:#2F5FA7;
+--light:#F5F7FA;
+}
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:var(--light);
+}
+
+/* NAV */
+.nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:16px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
+z-index:10;
+}
+
+.nav img{height:40px;}
+
+.nav a{
+margin-left:24px;
+text-decoration:none;
+color:var(--navy);
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('hero.jpeg.jpg') no-repeat center top;
+background-size:cover;
+display:flex;
+align-items:center;
+}
+
+.overlay{
+background:rgba(15,39,71,.60);
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+}
+
+.content{
+color:white;
+max-width:600px;
+margin-left:8%;
+}
+
+h1{
+font-family:'Poppins',sans-serif;
+font-size:48px;
+margin-bottom:18px;
+}
+
+p{
+font-size:18px;
+margin-bottom:28px;
+}
+
+.btn{
+background:var(--blue);
+color:white;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* SECTION */
+.section{
+background:white;
+padding:90px 8%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:40px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+h1{font-size:34px;}
+.content{margin:0 6%;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+<img src="logo.png.PNG">
+<div>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+</div>
+
+<section class="hero">
+<div class="overlay">
+<div class="content">
+<h1>Bookkeeping, Tax Preparation & Business Insight</h1>
+<p>Accurate books, properly prepared taxes, and financial guidance so you understand what’s working and what needs improvement.</p>
+<a class="btn">Schedule a Financial Review</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Clarity, Not Just Reports</h2>
+<p>We organize your books, prepare taxes correctly, and help you understand your real profit, cash flow, and next decisions.</p>
+
+<div class="grid">
+<div>
+<h3>Bookkeeping</h3>
+<p>Monthly reconciliations and organized financials.</p>
+</div>
+
+<div>
+<h3>Tax Preparation</h3>
+<p>Prepared from accurate books — no surprises.</p>
+</div>
+
+<div>
+<h3>Advisory</h3>
+<p>Know what’s working and what needs adjustment.</p>
+</div>
+</div>
+</section>
+
+</body>
+</html>
