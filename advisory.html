@@ -38,12 +38,20 @@ nav .links a{
     padding:70px 20px 40px;
     text-align:center;
 }
-.hero h1{font-size:40px;margin-bottom:10px;}
-.hero p{color:#4b5563;font-size:18px;}
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+.hero p{
+    color:#4b5563;
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
 
 /* CONTENT */
 .section{
-    max-width:900px;
+    max-width:950px;
     margin:50px auto;
     padding:0 20px;
 }
@@ -55,11 +63,36 @@ nav .links a{
 .section p{
     color:#4b5563;
     margin-bottom:20px;
+    line-height:1.7;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
+}
+
+.card h3{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:0;
 }
 
 ul{
     margin:20px 0 30px 18px;
-    line-height:1.7;
+    line-height:1.8;
+    color:#4b5563;
 }
 
 /* CTA */
@@ -67,6 +100,19 @@ ul{
     text-align:center;
     padding:80px 20px;
     background:#e9eef7;
+}
+
+.cta h2{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    color:#4b5563;
+    margin-bottom:25px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .button{
@@ -93,8 +139,8 @@ footer a{
 
 /* MOBILE */
 @media(max-width:900px){
-.hero h1{font-size:32px}
-nav{padding:18px 20px}
+    .hero h1{font-size:32px}
+    nav{padding:18px 20px}
 }
 
 </style>
@@ -103,7 +149,7 @@ nav{padding:18px 20px}
 <body>
 
 <nav>
-    <img src="logo.png.PNG">
+    <img src="logo.png.PNG" alt="InfraCore Advisory Group Logo">
     <div class="links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -112,36 +158,80 @@ nav{padding:18px 20px}
 </nav>
 
 <section class="hero">
-    <h1>Know What Your Numbers Mean</h1>
-    <p>Financial reports only help if you understand what to do next.</p>
+    <h1>Financial advisory for small business owners</h1>
+    <p>
+        Your numbers should help you make decisions — not just sit in reports you never use.
+        InfraCore Advisory Group helps you understand what your business finances are telling you
+        and what to do next.
+    </p>
 </section>
 
 <div class="section">
-    <h2>What We Help You Decide</h2>
+    <h2>What business advisory helps you answer</h2>
+    <p>
+        Many business owners know money is coming in, but still are not sure why profit feels low,
+        cash feels tight, or taxes become a surprise. Advisory helps connect the numbers to real decisions.
+    </p>
 
     <ul>
         <li>Are you actually profitable?</li>
-        <li>Are your prices too low?</li>
-        <li>Can you afford to hire?</li>
-        <li>Where is cash leaking?</li>
-        <li>Why revenue feels high but money feels tight</li>
-        <li>What taxes to expect ahead of time</li>
+        <li>Are your prices too low for what you’re spending?</li>
+        <li>Can your business realistically support hiring help?</li>
+        <li>Where is money leaking out of the business?</li>
+        <li>Why does revenue feel high but cash still feel tight?</li>
+        <li>What taxes should you expect ahead of time?</li>
+        <li>What should you focus on first financially?</li>
     </ul>
 </div>
 
 <div class="section">
-    <h2>Monthly Financial Guidance</h2>
+    <h2>How InfraCore supports your business</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Financial Clarity</h3>
+            <p>
+                Get a clearer understanding of where your business stands financially and what the numbers are actually saying.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Better Decisions</h3>
+            <p>
+                Use your financial information to make decisions about pricing, expenses, growth, and next steps with more confidence.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ongoing Guidance</h3>
+            <p>
+                Instead of only thinking about finances during tax season, get support that helps you stay ahead throughout the year.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>Monthly financial guidance in plain English</h2>
     <p>
-    Instead of only talking once a year, we regularly review your numbers
-    and explain what actions to take next — in plain English.
+        Advisory is designed for business owners who want more than categorized transactions.
+        It’s for the owner who wants to know what to fix, what to improve, and what decisions make the most sense financially.
+    </p>
+    <p>
+        We review your business finances with the goal of helping you understand your numbers,
+        stay organized, and move forward with more confidence.
     </p>
 </div>
 
 <section class="cta">
     <h2>Let’s talk about your business</h2>
-    <p>You’ll leave knowing what to fix and what to focus on.</p>
+    <p>
+        Schedule a consultation to walk through your current situation, your questions, and the next financial steps that make sense for your business.
+    </p>
     <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
-        Schedule a Financial Review
+        Schedule a Consultation
     </a>
 </section>
 
