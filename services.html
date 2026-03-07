@@ -9,125 +9,131 @@
 
 /* ===== GLOBAL ===== */
 body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-    background:#f5f7fb;
-    color:#0f1c2e;
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+background:#f5f7fb;
+color:#0f1c2e;
 }
 
 a{text-decoration:none}
 
 /* NAV */
 nav{
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
 nav img{height:42px}
 
 nav .links a{
-    margin-left:28px;
-    font-weight:600;
-    color:#0f1c2e;
+margin-left:28px;
+font-weight:600;
+color:#0f1c2e;
 }
 
-/* HERO HEADER */
+/* HEADER */
 .header{
-    text-align:center;
-    padding:70px 20px 40px;
-    background:white;
+text-align:center;
+padding:70px 20px 40px;
+background:white;
 }
 
 .header h1{
-    font-size:40px;
-    margin-bottom:10px;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .header p{
-    color:#4b5563;
-    font-size:18px;
+color:#4b5563;
+font-size:18px;
+max-width:720px;
+margin:auto;
 }
 
-/* CARDS */
+/* SERVICES GRID */
+
 .services{
-    padding:70px 8%;
+padding:70px 8%;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
 }
 
 .card{
-    background:white;
-    padding:40px;
-    border-radius:18px;
-    box-shadow:0 10px 28px rgba(0,0,0,.06);
-    transition:.2s;
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 28px rgba(0,0,0,.06);
+transition:.2s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
+transform:translateY(-6px);
 }
 
 .card h2{
-    margin-bottom:12px;
+margin-bottom:12px;
 }
 
 .card p{
-    color:#4b5563;
-    margin-bottom:20px;
+color:#4b5563;
+margin-bottom:20px;
 }
 
 .button{
-    display:inline-block;
-    background:#2f5ea8;
-    color:white;
-    padding:12px 22px;
-    border-radius:10px;
-    font-weight:600;
+display:inline-block;
+background:#2f5ea8;
+color:white;
+padding:12px 22px;
+border-radius:10px;
+font-weight:600;
 }
 
 /* CTA */
+
 .cta{
-    text-align:center;
-    padding:80px 20px;
-    background:#e9eef7;
+text-align:center;
+padding:80px 20px;
+background:#e9eef7;
 }
 
 .cta h2{
-    font-size:30px;
-    margin-bottom:15px;
+font-size:30px;
+margin-bottom:15px;
 }
 
 .cta p{
-    color:#4b5563;
-    margin-bottom:25px;
+color:#4b5563;
+margin-bottom:25px;
 }
 
 /* FOOTER */
+
 footer{
-    background:#0f1c2e;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+background:#0f1c2e;
+color:white;
+text-align:center;
+padding:50px 20px;
 }
 
 footer a{
-    color:#9ec3ff;
-    display:block;
-    margin:6px 0;
+color:#9ec3ff;
+display:block;
+margin:6px 0;
 }
 
 /* MOBILE */
+
 @media(max-width:900px){
-    nav{padding:18px 20px}
-    .header h1{font-size:32px}
+nav{padding:18px 20px}
+.header h1{font-size:32px}
 }
 
 </style>
@@ -136,70 +142,139 @@ footer a{
 <body>
 
 <!-- NAV -->
+
 <nav>
-    <img src="logo.png.PNG">
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+
+<img src="logo.png.PNG">
+
+<div class="links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</div>
+
 </nav>
 
 <!-- HEADER -->
+
 <section class="header">
-    <h1>Services</h1>
-    <p>Not just bookkeeping — real financial clarity for your business.</p>
+
+<h1>Financial support for your entire business</h1>
+
+<p>
+InfraCore Advisory Group helps small business owners understand their numbers,
+stay organized financially, and make smarter decisions about their business.
+</p>
+
 </section>
 
 <!-- SERVICES -->
+
 <section class="services">
-    <div class="grid">
 
-        <div class="card">
-            <h2>Bookkeeping</h2>
-            <p>
-            Accurate monthly financials, reconciliations, and categorized transactions
-            so you always know where your money is going.
-            </p>
-            <a class="button" href="bookkeeping.html">View Bookkeeping</a>
-        </div>
+<div class="grid">
 
-        <div class="card">
-            <h2>Tax Filing</h2>
-            <p>
-            Business taxes prepared and filed correctly — no surprises,
-            no missed deductions, no deadline stress.
-            </p>
-            <a class="button" href="taxes.html">View Tax Services</a>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h2>Advisory</h2>
-            <p>
-            Monthly guidance to improve profit, pricing, and cash flow —
-            the difference between surviving and growing.
-            </p>
-            <a class="button" href="advisory.html">View Advisory</a>
-        </div>
+<h2>Business Advisory</h2>
 
-    </div>
+<p>
+Strategic financial guidance designed to help business owners understand profit,
+cash flow, pricing, and growth decisions. This is where financial clarity turns
+into better business outcomes.
+</p>
+
+<a class="button" href="advisory.html">Learn More</a>
+
+</div>
+
+<div class="card">
+
+<h2>Bookkeeping</h2>
+
+<p>
+Clean financial records, categorized transactions, and monthly reconciliations
+so you always know where your business stands financially.
+</p>
+
+<a class="button" href="bookkeeping.html">Learn More</a>
+
+</div>
+
+<div class="card">
+
+<h2>Tax Filing</h2>
+
+<p>
+Business and personal tax preparation handled correctly with guidance throughout
+the year so there are no surprises when taxes are due.
+</p>
+
+<a class="button" href="taxes.html">Learn More</a>
+
+</div>
+
+<div class="card">
+
+<h2>Business Setup</h2>
+
+<p>
+Starting a business? Get help choosing the right structure, setting up your EIN,
+opening business accounts, and creating financial systems from day one.
+</p>
+
+<a class="button" href="setup.html">Learn More</a>
+
+</div>
+
+<div class="card">
+
+<h2>Small Business Workshops</h2>
+
+<p>
+Live Zoom workshops designed to help entrepreneurs understand the financial side
+of running a business, avoid common mistakes, and stay organized.
+</p>
+
+<a class="button" href="workshops.html">View Workshops</a>
+
+</div>
+
+</div>
+
 </section>
 
 <!-- CTA -->
+
 <section class="cta">
-    <h2>Not sure what you need?</h2>
-    <p>We’ll figure it out together in a quick call.</p>
-    <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
-        Schedule a Financial Review
-    </a>
+
+<h2>Not sure what your business needs?</h2>
+
+<p>
+Schedule a consultation and we’ll walk through your current situation
+and identify the best next steps for your business.
+</p>
+
+<a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
+Schedule a Consultation
+</a>
+
 </section>
 
 <!-- FOOTER -->
+
 <footer>
-    <h3>InfraCore Advisory Group</h3>
-    <a href="tel:19362834424">(936) 283-4424</a>
-    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-    <div>1111 FM 1485 STE 4031, Conroe TX</div>
+
+<h3>InfraCore Advisory Group</h3>
+
+<a href="tel:19362834424">(936) 283-4424</a>
+
+<a href="mailto:contact@infracoreadvisorygroup.com">
+contact@infracoreadvisorygroup.com
+</a>
+
+<div>1111 FM 1485 STE 4031, Conroe TX</div>
+
 </footer>
 
 </body>
