@@ -1,143 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | InfraCore Advisory Group</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
+  <title>Contact | InfraCore Advisory Group</title>
+  <meta name="description" content="Contact InfraCore Advisory Group for bookkeeping, tax services, business advisory, pricing, or workshop information." />
 
-/* GLOBAL */
-body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-    background:#f5f7fb;
-    color:#0f1c2e;
-}
-a{text-decoration:none}
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* NAV */
-nav{
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
-}
-nav img{height:42px}
-nav .links a{
-    margin-left:28px;
-    font-weight:600;
-    color:#0f1c2e;
-}
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --white:#ffffff;
+      --navy:#0f1c2e;
+      --blue:#2f5ea8;
+      --blue-dark:#244a84;
+      --text:#223046;
+      --muted:#5f6b7a;
+      --line:#dde5f0;
+      --soft:#eef3fb;
+      --shadow:0 14px 34px rgba(15,28,46,.08);
+      --radius:18px;
+    }
 
-/* HERO */
-.hero{
-    background:white;
-    padding:70px 20px 40px;
-    text-align:center;
-}
-.hero h1{font-size:40px;margin-bottom:10px;}
-.hero p{color:#4b5563;font-size:18px;}
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
 
-/* CONTACT BUTTONS */
-.contact-box{
-    max-width:700px;
-    margin:40px auto;
-    padding:0 20px;
-}
+    body{
+      margin:0;
+      font-family:"Inter", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
 
-.button{
-    display:block;
-    margin:15px 0;
-    padding:18px;
-    border-radius:12px;
-    color:white;
-    font-weight:600;
-    text-align:center;
-}
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
 
-.call{background:#29b765;}
-.text{background:#3b7ddd;}
-.email{background:#6a5acd;}
-.map{background:#111827;}
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
+    }
 
-/* SCHEDULER */
-.schedule{
-    max-width:900px;
-    margin:60px auto;
-    padding:0 20px;
-    text-align:center;
-}
+    nav{
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
 
-iframe{
-    width:100%;
-    height:720px;
-    border:none;
-    border-radius:16px;
-}
+    .nav-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 0;
+    }
 
-/* FOOTER */
-footer{
-    background:#0f1c2e;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-footer a{
-    color:#9ec3ff;
-    display:block;
-    margin:6px 0;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+      flex:0 0 auto;
+    }
 
-/* MOBILE */
-@media(max-width:900px){
-.hero h1{font-size:32px}
-nav{padding:18px 20px}
-}
+    .brand img{
+      height:34px;
+      width:auto;
+    }
 
-</style>
+    .brand-text{
+      font-weight:700;
+      color:var(--navy);
+      font-size:15px;
+      line-height:1.08;
+      max-width:220px;
+    }
+
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:10px 16px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    .links a{color:var(--navy);}
+    .links a:hover{color:var(--blue);}
+
+    .hero{
+      padding:72px 0 56px;
+      background:
+        linear-gradient(135deg, rgba(47,94,168,.08), rgba(255,255,255,0) 48%),
+        var(--white);
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      margin-bottom:16px;
+    }
+
+    h1{
+      margin:0 0 18px;
+      font-family:"Playfair Display", serif;
+      font-size:54px;
+      line-height:1.04;
+      color:var(--navy);
+    }
+
+    .hero p{
+      margin:0 auto;
+      font-size:18px;
+      line-height:1.75;
+      color:var(--muted);
+      max-width:800px;
+    }
+
+    section{
+      padding:72px 0;
+    }
+
+    .section-heading{
+      max-width:780px;
+      margin:0 auto 38px;
+      text-align:center;
+    }
+
+    .section-heading h2{
+      margin:0 0 12px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+      color:var(--navy);
+    }
+
+    .section-heading p{
+      margin:0;
+      font-size:17px;
+      line-height:1.7;
+      color:var(--muted);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+    }
+
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:30px 26px;
+      box-shadow:var(--shadow);
+    }
+
+    .card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:34px;
+      color:var(--navy);
+    }
+
+    .card p{
+      margin:0 0 16px;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:16px;
+    }
+
+    .info-list a,
+    .info-list div{
+      display:block;
+      margin:14px 0;
+      color:var(--navy);
+      font-weight:600;
+      line-height:1.6;
+    }
+
+    .topics{
+      background:var(--white);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .topics-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .topic-box{
+      background:var(--soft);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+    }
+
+    .topic-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      color:var(--navy);
+    }
+
+    .topic-box p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .cta{
+      padding:78px 0;
+    }
+
+    .cta-card{
+      background:var(--navy);
+      color:#fff;
+      border-radius:26px;
+      padding:42px 32px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
+
+    .cta-card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+    }
+
+    .cta-card p{
+      margin:0 auto 26px;
+      max-width:760px;
+      color:rgba(255,255,255,.84);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 24px;
+      border-radius:12px;
+      font-weight:700;
+      transition:.18s ease;
+      text-align:center;
+    }
+
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+
+    .btn-primary:hover{
+      background:var(--blue-dark);
+      transform:translateY(-1px);
+    }
+
+    .btn-secondary{
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--line);
+      margin-left:12px;
+    }
+
+    footer{
+      background:#0b1524;
+      color:#fff;
+      padding:48px 0 26px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .footer-brand h3{
+      margin:0 0 12px;
+      font-size:26px;
+      font-family:"Playfair Display", serif;
+    }
+
+    .footer-brand p{
+      margin:0;
+      color:rgba(255,255,255,.76);
+      line-height:1.7;
+      max-width:620px;
+    }
+
+    .footer-links a,
+    .footer-links div{
+      display:block;
+      margin:10px 0;
+      color:rgba(255,255,255,.82);
+    }
+
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.12);
+      margin-top:28px;
+      padding-top:18px;
+      color:rgba(255,255,255,.62);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width:1024px){
+      .contact-grid,
+      .topics-grid,
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width:700px){
+      .nav-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .links{
+        justify-content:flex-start;
+      }
+
+      .brand img{height:30px;}
+      .brand-text{
+        font-size:14px;
+        max-width:none;
+      }
+
+      h1{font-size:40px;}
+
+      .hero p,
+      .section-heading p,
+      .cta-card p{
+        font-size:17px;
+      }
+
+      .section-heading h2,
+      .card h2,
+      .cta-card h2{
+        font-size:32px;
+      }
+
+      .contact-grid,
+      .topics-grid,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .btn-secondary{
+        margin-left:0;
+        margin-top:12px;
+      }
+
+      .cta-card{
+        padding:34px 22px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-    <img src="logo.png.PNG">
-    <div class="links">
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="logo.png.PNG" alt="InfraCore Logo">
+        <div class="brand-text">InfraCore Advisory Group</div>
+      </div>
+
+      <div class="links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="events.html">Events</a>
+        <a href="results.html">Results</a>
         <a href="contact.html">Contact</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<section class="hero">
-    <h1>Contact InfraCore Advisory Group</h1>
-    <p>Reach out directly or schedule below</p>
-</section>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <h1>Let’s talk about what your business needs</h1>
+      <p>
+        Whether you need bookkeeping, tax support, advisory, pricing information, or workshop details, InfraCore Advisory Group is here to help you figure out the next right step.
+      </p>
+    </div>
+  </section>
 
-<div class="contact-box">
-    <a class="button call" href="tel:19362834424">📞 Call (936) 283-4424</a>
-    <a class="button text" href="sms:19362834424">💬 Text Us</a>
-    <a class="button email" href="mailto:contact@infracoreadvisorygroup.com">✉️ Email Us</a>
-    <a class="button map" href="https://maps.google.com/?q=1111+FM+1485+STE+4031+Conroe+TX" target="_top">
-        📍 Get Directions
-    </a>
-</div>
+  <section>
+    <div class="container contact-grid">
+      <div class="card">
+        <h2>Contact Information</h2>
+        <p>
+          Reach out to ask about services, consultations, pricing, or upcoming events.
+        </p>
 
-<section class="schedule">
-    <h2>Schedule a Financial Review</h2>
-    <p>Choose a time that works for you.</p>
+        <div class="info-list">
+          <a href="tel:19362834424">(936) 283-4424</a>
+          <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+          <div>1111 FM 1485 STE 4031, Conroe TX</div>
+        </div>
+      </div>
 
-    <iframe src="https://calendly.com/contact-infracoreadvisorygroup/20min"></iframe>
-</section>
+      <div class="card">
+        <h2>What you can reach out about</h2>
+        <p>
+          InfraCore works with business owners who need stronger financial organization, clearer reporting, and more confidence in the financial side of their business.
+        </p>
 
-<footer>
-    <h3>InfraCore Advisory Group</h3>
-    <a href="tel:19362834424">(936) 283-4424</a>
-    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-    <div>1111 FM 1485 STE 4031, Conroe TX</div>
-</footer>
+        <div class="info-list">
+          <div>Bookkeeping support</div>
+          <div>Tax services and amendments</div>
+          <div>Business advisory</div>
+          <div>Pricing questions</div>
+          <div>Workshops and events</div>
+          <div>Consultation requests</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Common reasons people reach out</h2>
+        <p>
+          Most clients are not contacting InfraCore because everything already feels clear. They usually reach out because they want help making things more organized and easier to understand.
+        </p>
+      </div>
+
+      <div class="topics-grid">
+        <div class="topic-box">
+          <h3>Books feel behind</h3>
+          <p>
+            Reach out if your bookkeeping feels messy, incomplete, or harder to manage than it should.
+          </p>
+        </div>
+
+        <div class="topic-box">
+          <h3>Taxes feel stressful</h3>
+          <p>
+            Reach out if you want stronger organization, better preparation, or help fixing prior-year issues.
+          </p>
+        </div>
+
+        <div class="topic-box">
+          <h3>You need financial clarity</h3>
+          <p>
+            Reach out if you want a better understanding of profit, expenses, or what your numbers are actually saying.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Ready to take the next step?</h2>
+        <p>
+          Book a consultation or review pricing to see what kind of support fits your business best right now.
+        </p>
+        <a href="mailto:contact@infracoreadvisorygroup.com" class="btn btn-primary">Email InfraCore</a>
+        <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>InfraCore Advisory Group</h3>
+        <p>
+          Business advisory, bookkeeping, tax services, and educational support for small business owners who want stronger financial organization and clearer decision-making.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:19362834424">(936) 283-4424</a>
+        <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+        <div>1111 FM 1485 STE 4031, Conroe TX</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      © 2015 InfraCore Advisory Group. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
