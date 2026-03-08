@@ -5,96 +5,193 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bookkeeping | InfraCore Advisory Group</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
-/* GLOBAL */
+:root{
+--bg:#f6f7fb;
+--white:#ffffff;
+--navy:#0f1c2e;
+--blue:#2f5ea8;
+--blue-dark:#244a84;
+--text:#223046;
+--muted:#5f6b7a;
+--line:#dde5f0;
+--soft:#eef3fb;
+--shadow:0 14px 34px rgba(15,28,46,.08);
+--radius:18px;
+}
+
+*{box-sizing:border-box;}
+
 body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-    background:#f5f7fb;
-    color:#0f1c2e;
+margin:0;
+font-family:"Inter",sans-serif;
+background:var(--bg);
+color:var(--text);
 }
-a{text-decoration:none}
 
-/* NAV */
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+a{text-decoration:none;color:inherit;}
+
 nav{
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
-}
-nav img{height:42px}
-nav .links a{
-    margin-left:28px;
-    font-weight:600;
-    color:#0f1c2e;
+background:white;
+border-bottom:1px solid var(--line);
+position:sticky;
+top:0;
+z-index:100;
 }
 
-/* HERO */
+.nav-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:700;
+color:var(--navy);
+}
+
+.brand img{
+height:44px;
+}
+
+.links{
+display:flex;
+gap:18px;
+font-weight:600;
+font-size:14px;
+}
+
+.links a:hover{color:var(--blue);}
+
 .hero{
-    background:white;
-    padding:70px 20px 40px;
-    text-align:center;
-}
-.hero h1{font-size:40px;margin-bottom:10px;}
-.hero p{color:#4b5563;font-size:18px;}
-
-/* CONTENT */
-.section{
-    max-width:900px;
-    margin:50px auto;
-    padding:0 20px;
+padding:70px 0 50px;
+background:white;
+border-bottom:1px solid var(--line);
+text-align:center;
 }
 
-.section h2{
-    margin-bottom:12px;
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:48px;
+margin-bottom:14px;
+color:var(--navy);
 }
 
-.section p{
-    color:#4b5563;
-    margin-bottom:20px;
+.hero p{
+max-width:760px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+color:var(--muted);
 }
 
-ul{
-    margin:20px 0 30px 18px;
-    line-height:1.7;
+section{
+padding:70px 0;
 }
 
-/* CTA */
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+}
+
+.card{
+background:white;
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:28px;
+box-shadow:var(--shadow);
+}
+
+.card h3{
+margin:0 0 10px;
+color:var(--navy);
+font-size:24px;
+}
+
+.card p{
+color:var(--muted);
+line-height:1.7;
+font-size:15px;
+}
+
+.card ul{
+margin-top:12px;
+padding-left:18px;
+color:var(--muted);
+line-height:1.8;
+}
+
+.highlight{
+background:var(--soft);
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:30px;
+margin-top:40px;
+}
+
+.highlight h2{
+font-family:"Playfair Display",serif;
+margin-bottom:14px;
+color:var(--navy);
+}
+
 .cta{
-    text-align:center;
-    padding:80px 20px;
-    background:#e9eef7;
+margin-top:40px;
+text-align:center;
 }
 
-.button{
-    display:inline-block;
-    background:#2f5ea8;
-    color:white;
-    padding:14px 24px;
-    border-radius:10px;
-    font-weight:600;
+.btn{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:14px 24px;
+border-radius:12px;
+font-weight:700;
 }
 
-/* FOOTER */
+.btn:hover{
+background:var(--blue-dark);
+}
+
 footer{
-    background:#0f1c2e;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-footer a{
-    color:#9ec3ff;
-    display:block;
-    margin:6px 0;
+background:#0b1524;
+color:white;
+padding:40px 0 20px;
+margin-top:60px;
 }
 
-/* MOBILE */
+.footer-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.footer-bottom{
+margin-top:20px;
+border-top:1px solid rgba(255,255,255,.15);
+padding-top:12px;
+text-align:center;
+font-size:14px;
+color:rgba(255,255,255,.7);
+}
+
 @media(max-width:900px){
-.hero h1{font-size:32px}
-nav{padding:18px 20px}
+.grid{grid-template-columns:1fr;}
+.footer-grid{grid-template-columns:1fr;}
+.hero h1{font-size:36px;}
 }
 
 </style>
@@ -103,54 +200,158 @@ nav{padding:18px 20px}
 <body>
 
 <nav>
-    <img src="logo.png.PNG">
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<div class="container nav-wrap">
+
+<div class="brand">
+<img src="logo.png.PNG">
+<div>InfraCore Advisory Group</div>
+</div>
+
+<div class="links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="bookkeeping.html">Bookkeeping</a>
+<a href="advisory.html">Advisory</a>
+<a href="taxes.html">Taxes</a>
+<a href="events.html">Events</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
 </nav>
 
 <section class="hero">
-    <h1>Clean Books You Can Trust</h1>
-    <p>Know your real profit every month — not once a year.</p>
+
+<div class="container">
+
+<h1>Bookkeeping That Actually Helps You Understand Your Business</h1>
+
+<p>
+Bookkeeping isn't just recording transactions. It’s the foundation that shows you what your business is really doing financially. Clean books allow you to understand profit, taxes, expenses, and where your money is actually going.
+</p>
+
+</div>
+
 </section>
 
-<div class="section">
-    <h2>What We Handle</h2>
-    <p>Your financial records stay organized and accurate so decisions are based on facts, not guesses.</p>
+<section>
 
-    <ul>
-        <li>Monthly reconciliations</li>
-        <li>Transaction categorization</li>
-        <li>Profit & loss reporting</li>
-        <li>Balance sheet tracking</li>
-        <li>QuickBooks management</li>
-        <li>Cleanup of messy books</li>
-    </ul>
+<div class="container grid">
+
+<div class="card">
+
+<h3>Monthly Bookkeeping</h3>
+
+<p>
+Monthly bookkeeping keeps your financial records organized and accurate so you always know where your business stands.
+</p>
+
+<ul>
+<li>Transaction categorization</li>
+<li>Monthly reconciliations</li>
+<li>Profit & loss reports</li>
+<li>Expense tracking</li>
+<li>Financial organization</li>
+</ul>
+
 </div>
 
-<div class="section">
-    <h2>Why It Matters</h2>
-    <p>
-    Bad bookkeeping leads to wrong decisions, tax surprises, and cash flow stress.
-    With accurate monthly financials, you know exactly where your business stands.
-    </p>
+<div class="card">
+
+<h3>Book Cleanup</h3>
+
+<p>
+Many businesses fall behind on their bookkeeping. Cleanup services organize past months or years so everything is ready for taxes and financial review.
+</p>
+
+<ul>
+<li>Fix uncategorized transactions</li>
+<li>Correct account balances</li>
+<li>Reconcile past statements</li>
+<li>Prepare books for tax filing</li>
+</ul>
+
 </div>
 
-<section class="cta">
-    <h2>Let’s review your books</h2>
-    <p>You’ll quickly see what’s working and what needs fixing.</p>
-    <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
-        Schedule a Financial Review
-    </a>
+<div class="card">
+
+<h3>Financial Tracking Setup</h3>
+
+<p>
+Many businesses don't know what they should actually be tracking. Setup services help create the right system so your finances make sense.
+</p>
+
+<ul>
+<li>Expense category setup</li>
+<li>Tracking systems</li>
+<li>Financial habit improvements</li>
+<li>Organization guidance</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Business Financial Reviews</h3>
+
+<p>
+Once the books are clean, you can actually understand your business numbers and what they mean.
+</p>
+
+<ul>
+<li>Profit review</li>
+<li>Expense patterns</li>
+<li>Tax preparation readiness</li>
+<li>Financial insights for owners</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+<h2>Why bookkeeping matters more than most businesses realize</h2>
+
+<p>
+A lot of small businesses only look at their finances during tax season. By then it’s usually too late to make better decisions for the year. Consistent bookkeeping gives business owners visibility throughout the year so they can understand profit, expenses, and financial trends.
+</p>
+
+</div>
+
+<div class="cta">
+
+<a class="btn" href="contact.html">Book a Consultation</a>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-    <h3>InfraCore Advisory Group</h3>
-    <a href="tel:19362834424">(936) 283-4424</a>
-    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-    <div>1111 FM 1485 STE 4031, Conroe TX</div>
+
+<div class="container footer-grid">
+
+<div>
+<h3>InfraCore Advisory Group</h3>
+<p>
+Bookkeeping, tax filing, and business advisory services for small business owners who want clarity and better financial decisions.
+</p>
+</div>
+
+<div>
+<p>(936) 283-4424</p>
+<p>contact@infracoreadvisorygroup.com</p>
+<p>Conroe, Texas</p>
+</div>
+
+</div>
+
+<div class="container footer-bottom">
+© 2015 InfraCore Advisory Group
+</div>
+
 </footer>
 
 </body>
