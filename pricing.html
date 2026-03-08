@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pricing | InfraCore Advisory Group</title>
+  <meta name="description" content="View bookkeeping, advisory, tax support, and one-time service pricing from InfraCore Advisory Group." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --white:#ffffff;
+      --navy:#0f1c2e;
+      --blue:#2f5ea8;
+      --blue-dark:#244a84;
+      --gold:#b68a3c;
+      --gold-dark:#8d6a2c;
+      --text:#223046;
+      --muted:#5f6b7a;
+      --line:#dde5f0;
+      --soft:#eef3fb;
+      --soft-gold:#f8f2e8;
+      --shadow:0 14px 34px rgba(15,28,46,.08);
+      --radius:18px;
+    }
+
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+
+    body{
+      margin:0;
+      font-family:"Inter", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
+
+    .container{
+      width:min(1180px, 92%);
+      margin:auto;
+    }
+
+    nav{
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .nav-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+      flex:0 0 auto;
+    }
+
+    .brand img{
+      height:34px;
+      width:auto;
+    }
+
+    .brand-text{
+      font-weight:700;
+      color:var(--navy);
+      font-size:15px;
+      line-height:1.08;
+      max-width:220px;
+    }
+
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:10px 16px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    .links a{color:var(--navy);}
+    .links a:hover{color:var(--blue);}
+
+    .hero{
+      padding:72px 0 56px;
+      background:
+        linear-gradient(135deg, rgba(47,94,168,.08), rgba(255,255,255,0) 48%),
+        var(--white);
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      margin-bottom:16px;
+    }
+
+    h1{
+      margin:0 0 18px;
+      font-family:"Playfair Display", serif;
+      font-size:54px;
+      line-height:1.04;
+      color:var(--navy);
+    }
+
+    .hero p{
+      margin:0 auto;
+      font-size:18px;
+      line-height:1.75;
+      color:var(--muted);
+      max-width:760px;
+    }
+
+    section{padding:72px 0;}
+
+    .section-heading{
+      max-width:760px;
+      margin:0 auto 38px;
+      text-align:center;
+    }
+
+    .section-heading h2{
+      margin:0 0 12px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+      color:var(--navy);
+    }
+
+    .section-heading p{
+      margin:0;
+      font-size:17px;
+      line-height:1.7;
+      color:var(--muted);
+    }
+
+    .pricing-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .price-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .price-top{
+      padding:24px 24px 20px;
+      color:#fff;
+      text-align:center;
+    }
+
+    .price-top.blue{
+      background:linear-gradient(135deg, var(--navy), var(--blue));
+    }
+
+    .price-top.gold{
+      background:linear-gradient(135deg, var(--gold-dark), var(--gold));
+    }
+
+    .price-top h3{
+      margin:0 0 8px;
+      font-size:30px;
+      line-height:1.1;
+    }
+
+    .price-top .sub{
+      margin:0;
+      font-size:15px;
+      opacity:.95;
+      font-weight:600;
+    }
+
+    .price-body{
+      padding:26px 24px 28px;
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    }
+
+    .price{
+      font-size:52px;
+      line-height:1;
+      color:var(--navy);
+      font-weight:800;
+      margin-bottom:6px;
+    }
+
+    .price span{
+      font-size:18px;
+      font-weight:600;
+      color:var(--muted);
+    }
+
+    .popular{
+      display:inline-block;
+      margin:8px 0 18px;
+      background:var(--soft);
+      color:var(--blue);
+      border:1px solid #cdddf5;
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .price-body ul{
+      margin:0 0 24px;
+      padding-left:20px;
+      color:var(--muted);
+      line-height:1.85;
+      flex:1;
+    }
+
+    .price-body li{margin:6px 0;}
+
+    .price-note{
+      margin:0 0 22px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 22px;
+      border-radius:12px;
+      font-weight:700;
+      transition:.18s ease;
+      text-align:center;
+    }
+
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+
+    .btn-primary:hover{
+      background:var(--blue-dark);
+      transform:translateY(-1px);
+    }
+
+    .btn-gold{
+      background:var(--gold);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+
+    .btn-gold:hover{
+      background:var(--gold-dark);
+      transform:translateY(-1px);
+    }
+
+    .one-time-wrap{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+
+    .one-time-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px 28px;
+      margin-top:22px;
+    }
+
+    .one-time-item{
+      background:var(--soft);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+    }
+
+    .one-time-item h3{
+      margin:0 0 8px;
+      font-size:20px;
+      color:var(--navy);
+    }
+
+    .one-time-item p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .why{
+      background:var(--white);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .why-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+    }
+
+    .why-card{
+      background:var(--soft);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+    }
+
+    .why-card h3{
+      margin:0 0 10px;
+      font-size:19px;
+      color:var(--navy);
+    }
+
+    .why-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .cta{
+      padding:78px 0;
+    }
+
+    .cta-card{
+      background:var(--navy);
+      color:#fff;
+      border-radius:26px;
+      padding:42px 32px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
+
+    .cta-card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+    }
+
+    .cta-card p{
+      margin:0 auto 26px;
+      max-width:760px;
+      color:rgba(255,255,255,.84);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    footer{
+      background:#0b1524;
+      color:#fff;
+      padding:48px 0 26px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .footer-brand h3{
+      margin:0 0 12px;
+      font-size:26px;
+      font-family:"Playfair Display", serif;
+    }
+
+    .footer-brand p{
+      margin:0;
+      color:rgba(255,255,255,.76);
+      line-height:1.7;
+      max-width:620px;
+    }
+
+    .footer-links a,
+    .footer-links div{
+      display:block;
+      margin:10px 0;
+      color:rgba(255,255,255,.82);
+    }
+
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.12);
+      margin-top:28px;
+      padding-top:18px;
+      color:rgba(255,255,255,.62);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width: 1024px){
+      .pricing-grid{
+        grid-template-columns:1fr;
+      }
+
+      .one-time-grid,
+      .why-grid,
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px){
+      .nav-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .links{
+        justify-content:flex-start;
+      }
+
+      .brand img{
+        height:30px;
+      }
+
+      .brand-text{
+        font-size:14px;
+        max-width:none;
+      }
+
+      h1{
+        font-size:40px;
+      }
+
+      .hero p,
+      .section-heading p,
+      .cta-card p{
+        font-size:17px;
+      }
+
+      .section-heading h2,
+      .cta-card h2{
+        font-size:32px;
+      }
+
+      .one-time-grid,
+      .why-grid,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .one-time-wrap{
+        padding:24px 20px;
+      }
+
+      .cta-card{
+        padding:34px 22px;
+      }
+
+      .price{
+        font-size:46px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="logo.png.PNG" alt="InfraCore Logo">
+        <div class="brand-text">InfraCore Advisory Group</div>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="events.html">Events</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Packages & Pricing</div>
+      <h1>Clear pricing for ongoing support and one-time services</h1>
+      <p>
+        InfraCore Advisory Group offers monthly packages and one-time financial services for business owners who need organized books, better financial visibility, and professional support throughout the year.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <h2>Monthly Packages</h2>
+        <p>
+          Choose the level of support that fits where your business is now and how much financial guidance you need throughout the year.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="price-top blue">
+            <h3>Starter Package</h3>
+            <p class="sub">Best for businesses getting organized</p>
+          </div>
+
+          <div class="price-body">
+            <div class="price">$249<span>/month</span></div>
+
+            <ul>
+              <li>Monthly bookkeeping</li>
+              <li>Categorizing transactions</li>
+              <li>Bank and credit card reconciliation</li>
+              <li>Basic financial reports</li>
+            </ul>
+
+            <p class="price-note">
+              A strong fit for small businesses that need consistent bookkeeping support and clean records.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-top blue">
+            <h3>Growth Package</h3>
+            <p class="sub">Most Popular</p>
+          </div>
+
+          <div class="price-body">
+            <div class="price">$399<span>/month</span></div>
+            <div class="popular">Most Popular</div>
+
+            <ul>
+              <li>Monthly bookkeeping</li>
+              <li>Bank and credit card reconciliation</li>
+              <li>Financial reports</li>
+              <li>Tax-ready books</li>
+              <li>Guidance on deductions and expenses</li>
+              <li>Support during the year</li>
+            </ul>
+
+            <p class="price-note">
+              Ideal for business owners who want more visibility, cleaner reporting, and year-round support.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-top gold">
+            <h3>Advisory Package</h3>
+            <p class="sub">For higher-level support</p>
+          </div>
+
+          <div class="price-body">
+            <div class="price">$599<span>/month</span></div>
+
+            <ul>
+              <li>Monthly bookkeeping</li>
+              <li>Financial reports</li>
+              <li>Quarterly tax planning</li>
+              <li>Tax preparation and filing</li>
+              <li>Business advisory</li>
+              <li>IRS assistance if needed</li>
+            </ul>
+
+            <p class="price-note">
+              Designed for businesses that want deeper financial guidance, planning support, and ongoing advisory.
+            </p>
+
+            <a href="contact.html" class="btn btn-gold">Schedule a Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="one-time-wrap">
+        <div class="section-heading" style="margin-bottom:0;">
+          <h2>One-Time Services</h2>
+          <p>
+            For business owners who need support with a specific issue, project, or cleanup without a monthly package.
+          </p>
+        </div>
+
+        <div class="one-time-grid">
+          <div class="one-time-item">
+            <h3>Book Cleanup / Catch-Up</h3>
+            <p>$300 – $1,200 depending on how much work is needed.</p>
+          </div>
+
+          <div class="one-time-item">
+            <h3>Business Setup</h3>
+            <p>$200 – $500 depending on the level of setup and guidance needed.</p>
+          </div>
+
+          <div class="one-time-item">
+            <h3>Tax Filing Only</h3>
+            <p>$200 – $450 depending on filing complexity and records provided.</p>
+          </div>
+
+          <div class="one-time-item">
+            <h3>IRS Help / Resolution</h3>
+            <p>$150 – $500+ depending on the issue and level of support required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why work with InfraCore Advisory Group</h2>
+        <p>
+          Business owners need more than a report. They need financial support that helps them stay organized, prepared, and informed.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>11+ years helping small businesses</h3>
+          <p>Experience supporting owners through bookkeeping, taxes, and financial organization.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Books organized and tax-ready</h3>
+          <p>Support that helps reduce stress and improve visibility before deadlines arrive.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>IRS help if issues arise</h3>
+          <p>Guidance and support when business owners need help responding to tax-related concerns.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>A real business expense</h3>
+          <p>Professional financial support can also be treated as a legitimate business expense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Not sure which package fits your business?</h2>
+        <p>
+          Book a consultation and we can talk through your current setup, your goals, and the level of support that makes the most sense.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>InfraCore Advisory Group</h3>
+        <p>
+          Business advisory, bookkeeping, tax services, and educational support for small business owners who want stronger financial organization and clearer decision-making.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:19362834424">(936) 283-4424</a>
+        <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+        <div>1111 FM 1485 STE 4031, Conroe TX</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      © 2015 InfraCore Advisory Group. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
