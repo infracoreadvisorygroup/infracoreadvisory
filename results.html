@@ -1,356 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results | InfraCore Advisory Group</title>
+  <meta name="description" content="See reviews, business outcomes, and examples of the bookkeeping, tax, and advisory support InfraCore Advisory Group provides." />
 
-<title>Client Results | InfraCore Advisory Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="Real results from business owners working with InfraCore Advisory Group. Bookkeeping, tax filing, and business advisory for small businesses." />
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --white:#ffffff;
+      --navy:#0f1c2e;
+      --blue:#2f5ea8;
+      --blue-dark:#244a84;
+      --text:#223046;
+      --muted:#5f6b7a;
+      --line:#dde5f0;
+      --soft:#eef3fb;
+      --shadow:0 14px 34px rgba(15,28,46,.08);
+      --radius:18px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
 
-<style>
+    body{
+      margin:0;
+      font-family:"Inter", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
 
-:root{
---bg:#f6f7fb;
---white:#ffffff;
---navy:#0f1c2e;
---blue:#2f5ea8;
---text:#223046;
---muted:#5f6b7a;
---line:#dde5f0;
---shadow:0 14px 34px rgba(15,28,46,.08);
-}
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
 
-*{box-sizing:border-box;}
+    .container{
+      width:min(1180px, 92%);
+      margin:auto;
+    }
 
-body{
-margin:0;
-font-family:"Inter",sans-serif;
-background:var(--bg);
-color:var(--text);
-}
+    nav{
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
 
-.container{
-width:min(1100px,92%);
-margin:auto;
-}
+    .nav-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 0;
+    }
 
-nav{
-background:white;
-border-bottom:1px solid var(--line);
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+      flex:0 0 auto;
+    }
 
-.nav-wrap{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0;
-}
+    .brand img{
+      height:34px;
+      width:auto;
+    }
 
-.brand{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:700;
-}
+    .brand-text{
+      font-weight:700;
+      color:var(--navy);
+      font-size:15px;
+      line-height:1.08;
+      max-width:220px;
+    }
 
-.brand img{
-height:32px;
-}
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:10px 16px;
+      font-size:13px;
+      font-weight:600;
+    }
 
-.links{
-display:flex;
-gap:18px;
-font-weight:600;
-font-size:14px;
-}
+    .links a{color:var(--navy);}
+    .links a:hover{color:var(--blue);}
 
-.links a:hover{
-color:var(--blue);
-}
+    .hero{
+      padding:72px 0 56px;
+      background:
+        linear-gradient(135deg, rgba(47,94,168,.08), rgba(255,255,255,0) 48%),
+        var(--white);
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
 
-.hero{
-padding:80px 0;
-background:white;
-border-bottom:1px solid var(--line);
-text-align:center;
-}
+    .eyebrow{
+      display:inline-block;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      margin-bottom:16px;
+    }
 
-.hero h1{
-font-family:"Playfair Display";
-font-size:48px;
-margin-bottom:16px;
-}
+    h1{
+      margin:0 0 18px;
+      font-family:"Playfair Display", serif;
+      font-size:54px;
+      line-height:1.04;
+      color:var(--navy);
+    }
 
-.hero p{
-font-size:18px;
-max-width:720px;
-margin:auto;
-color:var(--muted);
-line-height:1.7;
-}
+    .hero p{
+      margin:0 auto;
+      font-size:18px;
+      line-height:1.75;
+      color:var(--muted);
+      max-width:800px;
+    }
 
-section{
-padding:70px 0;
-}
+    section{
+      padding:72px 0;
+    }
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
-}
+    .section-heading{
+      max-width:780px;
+      margin:0 auto 38px;
+      text-align:center;
+    }
 
-.section-title h2{
-font-family:"Playfair Display";
-font-size:36px;
-}
+    .section-heading h2{
+      margin:0 0 12px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+      color:var(--navy);
+    }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:22px;
-}
+    .section-heading p{
+      margin:0;
+      font-size:17px;
+      line-height:1.7;
+      color:var(--muted);
+    }
 
-.card{
-background:white;
-border:1px solid var(--line);
-border-radius:16px;
-padding:26px;
-box-shadow:var(--shadow);
-}
+    .proof{
+      background:var(--white);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
 
-.card h3{
-margin-top:0;
-}
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+    }
 
-.card p{
-color:var(--muted);
-line-height:1.7;
-}
+    .stat-box{
+      background:var(--soft);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:24px;
+      text-align:center;
+    }
 
-.testimonial{
-background:white;
-border-left:4px solid var(--blue);
-padding:24px;
-margin-bottom:20px;
-box-shadow:var(--shadow);
-border-radius:10px;
-}
+    .stat-box h3{
+      margin:0 0 8px;
+      font-size:32px;
+      color:var(--navy);
+    }
 
-.testimonial strong{
-display:block;
-margin-top:10px;
-color:var(--navy);
-}
+    .stat-box p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.65;
+      font-size:15px;
+    }
 
-.cta{
-background:var(--navy);
-color:white;
-text-align:center;
-padding:80px 0;
-}
+    .reviews-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
 
-.cta h2{
-font-family:"Playfair Display";
-font-size:36px;
-}
+    .review-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+    }
 
-.btn{
-display:inline-block;
-background:var(--blue);
-color:white;
-padding:14px 22px;
-border-radius:10px;
-font-weight:600;
-margin-top:20px;
-}
+    .label{
+      display:inline-block;
+      margin-bottom:14px;
+      background:var(--soft);
+      color:var(--blue);
+      border:1px solid #cfdcf1;
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
 
-footer{
-background:#0b1524;
-color:white;
-padding:40px 0;
-}
+    .review-card p{
+      margin:0 0 16px;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:15px;
+    }
 
-footer p{
-opacity:.8;
-}
+    .review-card strong{
+      color:var(--navy);
+      font-size:15px;
+    }
 
-</style>
+    .case-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .case-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+    }
+
+    .case-card h3{
+      margin:0 0 12px;
+      font-size:22px;
+      color:var(--navy);
+    }
+
+    .case-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:15px;
+    }
+
+    .cta{
+      padding:78px 0;
+    }
+
+    .cta-card{
+      background:var(--navy);
+      color:#fff;
+      border-radius:26px;
+      padding:42px 32px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
+
+    .cta-card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+    }
+
+    .cta-card p{
+      margin:0 auto 26px;
+      max-width:760px;
+      color:rgba(255,255,255,.84);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 24px;
+      border-radius:12px;
+      font-weight:700;
+      transition:.18s ease;
+      text-align:center;
+    }
+
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+
+    .btn-primary:hover{
+      background:var(--blue-dark);
+      transform:translateY(-1px);
+    }
+
+    .btn-secondary{
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--line);
+      margin-left:12px;
+    }
+
+    footer{
+      background:#0b1524;
+      color:#fff;
+      padding:48px 0 26px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .footer-brand h3{
+      margin:0 0 12px;
+      font-size:26px;
+      font-family:"Playfair Display", serif;
+    }
+
+    .footer-brand p{
+      margin:0;
+      color:rgba(255,255,255,.76);
+      line-height:1.7;
+      max-width:620px;
+    }
+
+    .footer-links a,
+    .footer-links div{
+      display:block;
+      margin:10px 0;
+      color:rgba(255,255,255,.82);
+    }
+
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.12);
+      margin-top:28px;
+      padding-top:18px;
+      color:rgba(255,255,255,.62);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width:1024px){
+      .stats-grid,
+      .reviews-grid,
+      .case-grid,
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width:700px){
+      .nav-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .links{
+        justify-content:flex-start;
+      }
+
+      .brand img{height:30px;}
+      .brand-text{
+        font-size:14px;
+        max-width:none;
+      }
+
+      h1{font-size:40px;}
+
+      .hero p,
+      .section-heading p,
+      .cta-card p{
+        font-size:17px;
+      }
+
+      .section-heading h2,
+      .cta-card h2{
+        font-size:32px;
+      }
+
+      .stats-grid,
+      .reviews-grid,
+      .case-grid,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .btn-secondary{
+        margin-left:0;
+        margin-top:12px;
+      }
+
+      .cta-card{
+        padding:34px 22px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-<div class="container nav-wrap">
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="logo.png.PNG" alt="InfraCore Logo">
+        <div class="brand-text">InfraCore Advisory Group</div>
+      </div>
 
-<div class="brand">
-<img src="logo.png.PNG">
-InfraCore Advisory Group
-</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="events.html">Events</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="pricing.html">Pricing</a>
-<a href="events.html">Events</a>
-<a href="results.html">Results</a>
-<a href="contact.html">Contact</a>
-</div>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Results</div>
+      <h1>Real support. Real outcomes.</h1>
+      <p>
+        InfraCore Advisory Group helps business owners get more organized, more informed, and more confident in the financial side of their business. These are the kinds of results clients come for.
+      </p>
+    </div>
+  </section>
 
-</div>
-</nav>
+  <section class="proof">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why business owners work with InfraCore</h2>
+        <p>
+          Clients usually are not looking for more confusion. They want cleaner books, better communication, and clearer financial direction.
+        </p>
+      </div>
 
-<section class="hero">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>11+</h3>
+          <p>Years helping small businesses and individual clients with financial organization and tax support.</p>
+        </div>
 
-<div class="container">
+        <div class="stat-box">
+          <h3>100%</h3>
+          <p>Facebook recommendation rate shown on your page from the reviews you shared.</p>
+        </div>
 
-<h1>Results Business Owners Experience</h1>
+        <div class="stat-box">
+          <h3>Year-Round</h3>
+          <p>Support focused on bookkeeping, taxes, and advisory instead of only showing up at filing time.</p>
+        </div>
 
-<p>
-InfraCore Advisory Group helps business owners get organized, understand their numbers, and make better financial decisions. Below are real reviews and examples of the work we help business owners accomplish.
-</p>
+        <div class="stat-box">
+          <h3>Practical</h3>
+          <p>Guidance built around what business owners actually need to track, understand, and fix.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <h2>What clients are saying</h2>
+        <p>
+          These reviews reflect the kinds of results clients mention most often: better communication, organized books, easier taxes, and less financial stress.
+        </p>
+      </div>
 
-</section>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“Shelby made the entire process smooth and stress-free by filing my taxes quickly and efficiently. She answered all my questions and provided clear guidance.”</p>
+          <strong>Ashley — Tax Client</strong>
+        </div>
 
-<section>
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“I used to just hope my numbers were right. Shelby keeps everything organized and explains what I can and can’t write off. She’s helped me avoid mistakes that would have cost me later.”</p>
+          <strong>Kurtis — Truck Driver</strong>
+        </div>
 
-<div class="container">
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“Running BBQ events and competitions gets complicated fast. Shelby keeps my books straight, tracks sponsorships and expenses, and makes tax season easy.”</p>
+          <strong>Jesse — Event Business Owner</strong>
+        </div>
 
-<div class="section-title">
-<h2>What Clients Say</h2>
-</div>
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“Since Shelby started handling my books, I’ve been able to see what jobs actually make me money and where I was overspending. It’s taken a huge weight off my shoulders.”</p>
+          <strong>Robert — Service Business Owner</strong>
+        </div>
 
-<div class="testimonial">
-“Shelby made the entire process smooth and stress-free by filing my taxes quickly and efficiently. She answered all my questions and provided clear guidance.”
-<strong>Ashley – Tax Client</strong>
-</div>
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“From the very first message, she was incredibly communicative, quick to respond, clear in her explanations, and proactive about keeping me updated every step of the way.”</p>
+          <strong>Kristy — Tax Client</strong>
+        </div>
 
-<div class="testimonial">
-“I used to just hope my numbers were right. Shelby keeps everything organized and explains what I can and can’t write off. She’s helped me avoid mistakes that would have cost me later.”
-<strong>Kurtis – Truck Driver</strong>
-</div>
+        <div class="review-card">
+          <div class="label">Review</div>
+          <p>“Shelby was very helpful and she got me a great return in minutes. Her work ethic was top notch and I’ll definitely let her help with my returns from here on out.”</p>
+          <strong>Carlos — Tax Client</strong>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="testimonial">
-“Running BBQ events and competitions gets complicated fast. Shelby keeps my books straight, tracks sponsorships and expenses, and makes tax season easy.”
-<strong>Jesse – Event Business Owner</strong>
-</div>
+  <section class="proof">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Examples of the work we help with</h2>
+        <p>
+          Along with tax filing and bookkeeping support, InfraCore also helps business owners solve the kinds of financial issues that keep businesses stuck or disorganized.
+        </p>
+      </div>
 
-<div class="testimonial">
-“Since Shelby started handling my books I can actually see what jobs make money and where I was overspending. It’s taken a huge weight off my shoulders.”
-<strong>Robert – Service Business Owner</strong>
-</div>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Cleaning business support</h3>
+          <p>Helped support the financial side of building a cleaning business in Austin, including stronger organization and a better view of what needed to be tracked.</p>
+        </div>
 
-<div class="testimonial">
-“From the very first message she was incredibly communicative and clear about the process. I never felt confused about what documents were needed.”
-<strong>Kristy – Tax Client</strong>
-</div>
+        <div class="case-card">
+          <h3>Amendments and prior-year follow-through</h3>
+          <p>Helped a client address prior-year issues by amending 2020, submitting child-related paperwork for 2020 through 2024, and filing 2021 through 2025.</p>
+        </div>
 
-<div class="testimonial">
-“Shelby was very helpful and got me a great return. Her work ethic is top notch and I’ll definitely continue working with her.”
-<strong>Carlos – Tax Client</strong>
-</div>
+        <div class="case-card">
+          <h3>Trucking bookkeeping cleanup</h3>
+          <p>Helped clean up trucking company books and support better tracking around financial records, deductions, and reporting.</p>
+        </div>
 
-</div>
+        <div class="case-card">
+          <h3>Lawn business bookkeeping</h3>
+          <p>Supported lawn businesses with bookkeeping organization and stronger visibility into expenses and financial activity.</p>
+        </div>
 
-</section>
+        <div class="case-card">
+          <h3>Salon financial organization</h3>
+          <p>Worked with salon businesses needing clearer bookkeeping, stronger expense tracking, and better understanding of the financial side of operations.</p>
+        </div>
 
-<section>
+        <div class="case-card">
+          <h3>Profit and expense clarity</h3>
+          <p>Helped owners better understand where money was going, what work was truly profitable, and what financial habits needed improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Need help getting the financial side of your business under control?</h2>
+        <p>
+          Book a consultation to talk through where things stand, what feels unclear, and what kind of support would make the biggest difference.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+        <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+      </div>
+    </div>
+  </section>
 
-<div class="section-title">
-<h2>Examples of Businesses We've Helped</h2>
-</div>
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>InfraCore Advisory Group</h3>
+        <p>
+          Business advisory, bookkeeping, tax services, and educational support for small business owners who want stronger financial organization and clearer decision-making.
+        </p>
+      </div>
 
-<div class="cards">
+      <div class="footer-links">
+        <a href="tel:19362834424">(936) 283-4424</a>
+        <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+        <div>1111 FM 1485 STE 4031, Conroe TX</div>
+      </div>
+    </div>
 
-<div class="card">
-<h3>Cleaning Company</h3>
-<p>
-Helped a cleaning company owner build their business systems, track mileage and supplies, and understand which jobs were profitable.
-</p>
-</div>
-
-<div class="card">
-<h3>Salon Owners</h3>
-<p>
-Helped salon owners organize booth rental income, supply expenses, and monthly financial reporting so they could clearly see their profit.
-</p>
-</div>
-
-<div class="card">
-<h3>Trucking Companies</h3>
-<p>
-Cleaned up trucking books and helped drivers correctly track fuel, per diem, and other deductions to avoid tax mistakes.
-</p>
-</div>
-
-<div class="card">
-<h3>Lawn Service Businesses</h3>
-<p>
-Helped lawn businesses track equipment costs, fuel expenses, and job profitability so owners understood where their money was going.
-</p>
-</div>
-
-<div class="card">
-<h3>Tax Amendments</h3>
-<p>
-Helped clients amend prior tax returns including correcting 2020 filings and submitting dependent documentation for multiple years.
-</p>
-</div>
-
-<div class="card">
-<h3>Startup Businesses</h3>
-<p>
-Guided new business owners through proper financial setup so they could track income, expenses, and deductions correctly from the start.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Want results like this for your business?</h2>
-
-<p style="max-width:600px;margin:auto;">
-If your books are messy, taxes feel overwhelming, or you simply want clearer financial direction, InfraCore Advisory Group can help.
-</p>
-
-<a href="contact.html" class="btn">Book a Consultation</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="container">
-
-<h3>InfraCore Advisory Group</h3>
-
-<p>
-Bookkeeping • Tax Filing • Business Advisory
-</p>
-
-<p>
-(936) 283-4424<br>
-contact@infracoreadvisorygroup.com<br>
-1111 FM 1485 STE 4031, Conroe TX
-</p>
-
-</div>
-
-</footer>
+    <div class="container footer-bottom">
+      © 2015 InfraCore Advisory Group. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
