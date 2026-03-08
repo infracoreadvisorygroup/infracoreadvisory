@@ -1,156 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tax Filing | InfraCore Advisory Group</title>
+
+<title>Tax Filing Services | InfraCore Advisory Group</title>
+
+<meta name="description" content="Professional tax preparation and filing for small businesses. InfraCore Advisory Group keeps your taxes organized and filed correctly." />
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* GLOBAL */
+:root{
+--bg:#f6f7fb;
+--white:#ffffff;
+--navy:#0f1c2e;
+--blue:#2f5ea8;
+--text:#223046;
+--muted:#5f6b7a;
+--line:#dde5f0;
+--shadow:0 14px 34px rgba(15,28,46,.08);
+}
+
 body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-    background:#f5f7fb;
-    color:#0f1c2e;
+margin:0;
+font-family:"Inter",sans-serif;
+background:var(--bg);
+color:var(--text);
 }
-a{text-decoration:none}
 
-/* NAV */
+.container{
+width:min(1100px,92%);
+margin:auto;
+}
+
 nav{
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
-}
-nav img{height:42px}
-nav .links a{
-    margin-left:28px;
-    font-weight:600;
-    color:#0f1c2e;
+background:white;
+border-bottom:1px solid var(--line);
 }
 
-/* HERO */
+.nav-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:700;
+}
+
+.brand img{
+height:32px;
+}
+
+.links{
+display:flex;
+gap:18px;
+font-weight:600;
+font-size:14px;
+}
+
 .hero{
-    background:white;
-    padding:70px 20px 40px;
-    text-align:center;
-}
-.hero h1{font-size:40px;margin-bottom:10px;}
-.hero p{color:#4b5563;font-size:18px;}
-
-/* CONTENT */
-.section{
-    max-width:900px;
-    margin:50px auto;
-    padding:0 20px;
+padding:80px 0;
+background:white;
+border-bottom:1px solid var(--line);
+text-align:center;
 }
 
-.section h2{
-    margin-bottom:12px;
+.hero h1{
+font-family:"Playfair Display";
+font-size:46px;
+margin-bottom:14px;
 }
 
-.section p{
-    color:#4b5563;
-    margin-bottom:20px;
+.hero p{
+font-size:18px;
+color:var(--muted);
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
 
-ul{
-    margin:20px 0 30px 18px;
-    line-height:1.7;
+section{
+padding:70px 0;
 }
 
-/* CTA */
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-title h2{
+font-family:"Playfair Display";
+font-size:34px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+padding:26px;
+box-shadow:var(--shadow);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.card p{
+color:var(--muted);
+line-height:1.7;
+}
+
+.list{
+max-width:600px;
+margin:auto;
+font-size:17px;
+line-height:1.9;
+color:var(--muted);
+}
+
 .cta{
-    text-align:center;
-    padding:80px 20px;
-    background:#e9eef7;
+background:var(--navy);
+color:white;
+text-align:center;
+padding:80px 0;
 }
 
-.button{
-    display:inline-block;
-    background:#2f5ea8;
-    color:white;
-    padding:14px 24px;
-    border-radius:10px;
-    font-weight:600;
+.cta h2{
+font-family:"Playfair Display";
+font-size:36px;
 }
 
-/* FOOTER */
+.btn{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:14px 22px;
+border-radius:10px;
+font-weight:600;
+margin-top:20px;
+}
+
 footer{
-    background:#0f1c2e;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-footer a{
-    color:#9ec3ff;
-    display:block;
-    margin:6px 0;
+background:#0b1524;
+color:white;
+padding:40px 0;
 }
 
-/* MOBILE */
-@media(max-width:900px){
-.hero h1{font-size:32px}
-nav{padding:18px 20px}
+footer p{
+opacity:.8;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
-    <img src="logo.png.PNG">
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+
+<div class="container nav-wrap">
+
+<div class="brand">
+<img src="logo.png.PNG">
+InfraCore Advisory Group
+</div>
+
+<div class="links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="bookkeeping.html">Bookkeeping</a>
+<a href="advisory.html">Advisory</a>
+<a href="taxes.html">Tax Services</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
 </nav>
 
 <section class="hero">
-    <h1>Taxes Filed Correctly</h1>
-    <p>No surprises. No scrambling. Just clarity.</p>
+
+<div class="container">
+
+<h1>Taxes Filed Correctly</h1>
+
+<p>
+No surprises. No scrambling at the last minute.  
+InfraCore Advisory Group prepares and files taxes with organized records so business owners can move through tax season with clarity and confidence.
+</p>
+
+</div>
+
 </section>
 
-<div class="section">
-    <h2>What We Handle</h2>
-    <p>Your business taxes prepared and filed accurately from organized records.</p>
+<section>
 
-    <ul>
-        <li>Business tax preparation</li>
-        <li>Business tax filing</li>
-        <li>Schedule C returns</li>
-        <li>S-Corp returns</li>
-        <li>Estimated tax guidance</li>
-        <li>Year-end adjustments</li>
-    </ul>
+<div class="container">
+
+<div class="section-title">
+<h2>What We Handle</h2>
 </div>
 
-<div class="section">
-    <h2>Why Clients Come To Us</h2>
-    <p>
-    Most tax issues start with bad bookkeeping.
-    Because we manage both, you know what to expect before filing — not after.
-    </p>
+<div class="list">
+
+• Business tax preparation  
+• Business tax filing  
+• Schedule C returns  
+• S-Corporation returns  
+• Estimated tax guidance  
+• Year-end adjustments  
+• Tax document organization  
+• Prior year amendments  
+
 </div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Why Clients Come To InfraCore</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Books & Taxes Work Together</h3>
+<p>
+Most tax problems start with messy bookkeeping. Our approach focuses on clean records so your taxes are prepared correctly.
+</p>
+</div>
+
+<div class="card">
+<h3>Clear Communication</h3>
+<p>
+Clients know exactly what documents are needed and where their return stands throughout the process.
+</p>
+</div>
+
+<div class="card">
+<h3>Business Owner Focused</h3>
+<p>
+Our work focuses on helping small business owners understand deductions, expenses, and how their financial decisions affect taxes.
+</p>
+</div>
+
+<div class="card">
+<h3>Year-Round Support</h3>
+<p>
+Tax season shouldn't be the only time you think about taxes. We help owners stay organized all year.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section class="cta">
-    <h2>Let’s review your tax situation</h2>
-    <p>We’ll explain what you owe and why.</p>
-    <a class="button" href="https://calendly.com/contact-infracoreadvisorygroup/20min">
-        Schedule a Financial Review
-    </a>
+
+<div class="container">
+
+<h2>Ready to file your taxes with confidence?</h2>
+
+<p style="max-width:600px;margin:auto;">
+Organized books and clear tax preparation make the entire process easier for business owners.
+</p>
+
+<a href="contact.html" class="btn">Schedule a Consultation</a>
+
+</div>
+
 </section>
 
 <footer>
-    <h3>InfraCore Advisory Group</h3>
-    <a href="tel:19362834424">(936) 283-4424</a>
-    <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
-    <div>1111 FM 1485 STE 4031, Conroe TX</div>
+
+<div class="container">
+
+<h3>InfraCore Advisory Group</h3>
+
+<p>
+Bookkeeping • Tax Filing • Business Advisory
+</p>
+
+<p>
+(936) 283-4424<br>
+contact@infracoreadvisorygroup.com<br>
+1111 FM 1485 STE 4031, Conroe TX
+</p>
+
+</div>
+
 </footer>
 
 </body>
