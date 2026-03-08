@@ -1,384 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Workshops | InfraCore Advisory Group</title>
+  <meta name="description" content="Business workshops and educational events from InfraCore Advisory Group covering bookkeeping, tax readiness, expense tracking, and business organization." />
 
-<title>Business Workshops & Events | InfraCore Advisory Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="InfraCore Advisory Group hosts business workshops covering bookkeeping, tax readiness, financial tracking, and starting a business. View upcoming workshops and events." />
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --white:#ffffff;
+      --navy:#0f1c2e;
+      --blue:#2f5ea8;
+      --blue-dark:#244a84;
+      --text:#223046;
+      --muted:#5f6b7a;
+      --line:#dde5f0;
+      --soft:#eef3fb;
+      --shadow:0 14px 34px rgba(15,28,46,.08);
+      --radius:18px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
 
-<style>
+    body{
+      margin:0;
+      font-family:"Inter", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
 
-:root{
---bg:#f6f7fb;
---white:#ffffff;
---navy:#0f1c2e;
---blue:#2f5ea8;
---blue-dark:#244a84;
---text:#223046;
---muted:#5f6b7a;
---line:#dde5f0;
---soft:#eef3fb;
---shadow:0 14px 34px rgba(15,28,46,.08);
---radius:18px;
-}
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
 
-*{box-sizing:border-box;}
+    .container{
+      width:min(1180px, 92%);
+      margin:auto;
+    }
 
-body{
-margin:0;
-font-family:"Inter", Arial, sans-serif;
-background:var(--bg);
-color:var(--text);
-}
+    nav{
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
 
-a{text-decoration:none;color:inherit;}
+    .nav-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 0;
+    }
 
-.container{
-width:min(1180px,92%);
-margin:auto;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+      flex:0 0 auto;
+    }
 
-nav{
-background:white;
-border-bottom:1px solid var(--line);
-position:sticky;
-top:0;
-z-index:100;
-}
+    .brand img{
+      height:34px;
+      width:auto;
+    }
 
-.nav-wrap{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:16px 0;
-}
+    .brand-text{
+      font-weight:700;
+      color:var(--navy);
+      font-size:15px;
+      line-height:1.08;
+      max-width:220px;
+    }
 
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-}
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:10px 16px;
+      font-size:13px;
+      font-weight:600;
+    }
 
-.brand img{
-height:32px;
-}
+    .links a{color:var(--navy);}
+    .links a:hover{color:var(--blue);}
 
-.brand-text{
-font-weight:700;
-color:var(--navy);
-font-size:15px;
-}
+    .hero{
+      padding:72px 0 56px;
+      background:
+        linear-gradient(135deg, rgba(47,94,168,.08), rgba(255,255,255,0) 48%),
+        var(--white);
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
 
-.links{
-display:flex;
-gap:16px;
-font-weight:600;
-font-size:14px;
-}
+    .eyebrow{
+      display:inline-block;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      margin-bottom:16px;
+    }
 
-.links a:hover{
-color:var(--blue);
-}
+    h1{
+      margin:0 0 18px;
+      font-family:"Playfair Display", serif;
+      font-size:54px;
+      line-height:1.04;
+      color:var(--navy);
+    }
 
-.hero{
-padding:80px 0 60px;
-background:white;
-border-bottom:1px solid var(--line);
-text-align:center;
-}
+    .hero p{
+      margin:0 auto;
+      font-size:18px;
+      line-height:1.75;
+      color:var(--muted);
+      max-width:780px;
+    }
 
-.hero h1{
-font-family:"Playfair Display";
-font-size:48px;
-margin-bottom:16px;
-}
+    section{padding:72px 0;}
 
-.hero p{
-font-size:18px;
-max-width:760px;
-margin:auto;
-color:var(--muted);
-line-height:1.7;
-}
+    .section-heading{
+      max-width:760px;
+      margin:0 auto 38px;
+      text-align:center;
+    }
 
-.btn{
-display:inline-block;
-padding:14px 22px;
-border-radius:10px;
-font-weight:600;
-margin-top:24px;
-}
+    .section-heading h2{
+      margin:0 0 12px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+      color:var(--navy);
+    }
 
-.primary{
-background:var(--blue);
-color:white;
-}
+    .section-heading p{
+      margin:0;
+      font-size:17px;
+      line-height:1.7;
+      color:var(--muted);
+    }
 
-.primary:hover{
-background:var(--blue-dark);
-}
+    .feature{
+      background:var(--white);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
 
-section{
-padding:70px 0;
-}
+    .feature-card{
+      max-width:980px;
+      margin:auto;
+      background:linear-gradient(135deg, #f3f7fd, #ffffff);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:34px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
-}
+    .feature-card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:36px;
+      color:var(--navy);
+    }
 
-.section-title h2{
-font-family:"Playfair Display";
-font-size:36px;
-}
+    .feature-card p{
+      margin:0 auto 24px;
+      max-width:760px;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:17px;
+    }
 
-.section-title p{
-max-width:700px;
-margin:auto;
-color:var(--muted);
-}
+    .btn{
+      display:inline-block;
+      padding:15px 24px;
+      border-radius:12px;
+      font-weight:700;
+      transition:.18s ease;
+      text-align:center;
+    }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:22px;
-}
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
 
-.card{
-background:white;
-border:1px solid var(--line);
-border-radius:16px;
-padding:26px;
-box-shadow:var(--shadow);
-}
+    .btn-primary:hover{
+      background:var(--blue-dark);
+      transform:translateY(-1px);
+    }
 
-.card h3{
-margin-top:0;
-}
+    .btn-secondary{
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--line);
+      margin-left:12px;
+    }
 
-.card p{
-color:var(--muted);
-line-height:1.7;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
 
-.eventbrite{
-background:white;
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-}
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+    }
 
-.embed{
-border:1px solid var(--line);
-border-radius:16px;
-overflow:hidden;
-}
+    .card h3{
+      margin:0 0 12px;
+      font-size:24px;
+      color:var(--navy);
+    }
 
-.cta{
-background:var(--navy);
-color:white;
-text-align:center;
-padding:80px 0;
-}
+    .card p{
+      margin:0 0 12px;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:15px;
+    }
 
-.cta h2{
-font-family:"Playfair Display";
-font-size:36px;
-}
+    .card ul{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      line-height:1.85;
+    }
 
-footer{
-background:#0b1524;
-color:white;
-padding:40px 0;
-}
+    .cta{
+      padding:78px 0;
+    }
 
-footer p{
-opacity:.8;
-}
+    .cta-card{
+      background:var(--navy);
+      color:#fff;
+      border-radius:26px;
+      padding:42px 32px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
 
-</style>
+    .cta-card h2{
+      margin:0 0 14px;
+      font-family:"Playfair Display", serif;
+      font-size:40px;
+    }
 
+    .cta-card p{
+      margin:0 auto 26px;
+      max-width:760px;
+      color:rgba(255,255,255,.84);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    footer{
+      background:#0b1524;
+      color:#fff;
+      padding:48px 0 26px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .footer-brand h3{
+      margin:0 0 12px;
+      font-size:26px;
+      font-family:"Playfair Display", serif;
+    }
+
+    .footer-brand p{
+      margin:0;
+      color:rgba(255,255,255,.76);
+      line-height:1.7;
+      max-width:620px;
+    }
+
+    .footer-links a,
+    .footer-links div{
+      display:block;
+      margin:10px 0;
+      color:rgba(255,255,255,.82);
+    }
+
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.12);
+      margin-top:28px;
+      padding-top:18px;
+      color:rgba(255,255,255,.62);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width:1024px){
+      .grid,
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width:700px){
+      .nav-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .links{
+        justify-content:flex-start;
+      }
+
+      .brand img{height:30px;}
+      .brand-text{
+        font-size:14px;
+        max-width:none;
+      }
+
+      h1{font-size:40px;}
+      .hero p,
+      .section-heading p,
+      .feature-card p,
+      .cta-card p{font-size:17px;}
+
+      .section-heading h2,
+      .feature-card h2,
+      .cta-card h2{font-size:32px;}
+
+      .grid,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .btn-secondary{
+        margin-left:0;
+        margin-top:12px;
+      }
+
+      .feature-card,
+      .cta-card{
+        padding:34px 22px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-<div class="container nav-wrap">
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="logo.png.PNG" alt="InfraCore Logo">
+        <div class="brand-text">InfraCore Advisory Group</div>
+      </div>
 
-<div class="brand">
-<img src="logo.png.PNG">
-<div class="brand-text">InfraCore Advisory Group</div>
-</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="events.html">Events</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="pricing.html">Pricing</a>
-<a href="events.html">Events</a>
-<a href="results.html">Results</a>
-<a href="contact.html">Contact</a>
-</div>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Events & Workshops</div>
+      <h1>Practical workshops for business owners</h1>
+      <p>
+        InfraCore Advisory Group offers educational events designed to help owners better understand bookkeeping, expense tracking, tax readiness, business organization, and the financial habits that support stronger businesses.
+      </p>
+    </div>
+  </section>
 
-</div>
-</nav>
+  <section class="feature">
+    <div class="container">
+      <div class="feature-card">
+        <h2>Learn what to track and why it matters</h2>
+        <p>
+          These workshops are built around practical questions business owners actually ask. Instead of vague information, the goal is to leave with clearer understanding and usable next steps.
+        </p>
+        <a href="https://www.eventbrite.com/o/121108144967?aff=ebdsshios" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Upcoming Workshops</a>
+        <a href="contact.html" class="btn btn-secondary">Request a Workshop</a>
+      </div>
+    </div>
+  </section>
 
-<section class="hero">
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <h2>Workshop topics</h2>
+        <p>
+          Topics are designed around the financial and operational areas that commonly create confusion for business owners.
+        </p>
+      </div>
 
-<div class="container">
+      <div class="grid">
+        <div class="card">
+          <h3>Starting a business</h3>
+          <p>
+            Helps owners understand what should be tracked early and how to build stronger financial habits from the beginning.
+          </p>
+          <ul>
+            <li>Business setup basics</li>
+            <li>What records to keep</li>
+            <li>Financial organization habits</li>
+          </ul>
+        </div>
 
-<h1>Business Workshops for Owners Who Want Clarity</h1>
+        <div class="card">
+          <h3>Expense tracking and write-offs</h3>
+          <p>
+            Covers common deductions, tracking habits, and the kinds of expenses owners often miss through the year.
+          </p>
+          <ul>
+            <li>Mileage and vehicle tracking</li>
+            <li>Software and subscriptions</li>
+            <li>Promotions and marketing expenses</li>
+          </ul>
+        </div>
 
-<p>
-InfraCore Advisory Group hosts practical workshops designed to help business owners understand bookkeeping, tax readiness, financial tracking, and the systems that support a healthy business.
-</p>
+        <div class="card">
+          <h3>Tax readiness</h3>
+          <p>
+            Helps owners understand what should be organized before tax deadlines and how stronger records reduce stress later.
+          </p>
+          <ul>
+            <li>Year-end organization</li>
+            <li>Common tracking gaps</li>
+            <li>Preparing cleaner records</li>
+          </ul>
+        </div>
 
-<p style="margin-top:12px;">
-Seats are limited for most workshops and early registration is recommended.
-</p>
+        <div class="card">
+          <h3>Industry-based workshops</h3>
+          <p>
+            Sessions can be shaped around specific business types and the financial questions they commonly run into.
+          </p>
+          <ul>
+            <li>Service-based businesses</li>
+            <li>Salons and beauty businesses</li>
+            <li>Cleaning companies and contractors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<a href="https://www.eventbrite.com/o/121108144967?aff=ebdsshios"
-target="_blank"
-rel="noopener noreferrer"
-class="btn primary">
-View Upcoming Workshops
-</a>
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Want to host or attend a workshop?</h2>
+        <p>
+          View upcoming events on Eventbrite or reach out about a workshop for your business group, community, or organization.
+        </p>
+        <a href="https://www.eventbrite.com/o/121108144967?aff=ebdsshios" target="_blank" rel="noopener noreferrer" class="btn btn-primary">See All Events</a>
+        <a href="contact.html" class="btn btn-secondary">Contact InfraCore</a>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>InfraCore Advisory Group</h3>
+        <p>
+          Business advisory, bookkeeping, tax services, and educational support for small business owners who want stronger financial organization and clearer decision-making.
+        </p>
+      </div>
 
-</section>
+      <div class="footer-links">
+        <a href="tel:19362834424">(936) 283-4424</a>
+        <a href="mailto:contact@infracoreadvisorygroup.com">contact@infracoreadvisorygroup.com</a>
+        <div>1111 FM 1485 STE 4031, Conroe TX</div>
+      </div>
+    </div>
 
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<h2>Popular Workshop Topics</h2>
-<p>
-Workshops are built around the financial questions business owners most often ask when they are trying to stay organized and improve their business systems.
-</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>Starting a Business the Right Way</h3>
-<p>
-Learn what financial records to track from day one, how to organize your books, and the financial habits that make running a business easier.
-</p>
-</div>
-
-<div class="card">
-<h3>Expense Tracking & Write-Offs</h3>
-<p>
-Understand common deductions business owners miss and how to properly track expenses throughout the year.
-</p>
-</div>
-
-<div class="card">
-<h3>Cleaning Company Financial Tracking</h3>
-<p>
-Workshops designed for cleaning companies covering mileage tracking, supplies, referral discounts, and contractor payments.
-</p>
-</div>
-
-<div class="card">
-<h3>1099 Contractor Basics</h3>
-<p>
-Learn what business owners should understand when working with contractors and how to track contractor payments correctly.
-</p>
-</div>
-
-<div class="card">
-<h3>Industry-Specific Workshops</h3>
-<p>
-Some workshops are designed for specific industries like salons, bakers, service businesses, and independent contractors.
-</p>
-</div>
-
-<div class="card">
-<h3>Tax Readiness for Business Owners</h3>
-<p>
-Understand what records to organize before tax season and how bookkeeping supports smoother tax filing.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="eventbrite">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Browse All Upcoming Events</h2>
-<p>
-Visit our Eventbrite page to see the full list of upcoming workshops, event dates, and registration details.
-</p>
-</div>
-
-<div style="text-align:center;">
-
-<a href="https://www.eventbrite.com/o/121108144967?aff=ebdsshios"
-target="_blank"
-rel="noopener noreferrer"
-class="btn primary">
-See All Events on Eventbrite
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Want a workshop for your group or organization?</h2>
-
-<p style="max-width:650px;margin:auto;">
-InfraCore Advisory Group can also host educational sessions for business communities, networking groups, and industry organizations.
-</p>
-
-<br>
-
-<a href="contact.html" class="btn primary">
-Contact InfraCore
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="container">
-
-<h3>InfraCore Advisory Group</h3>
-
-<p>
-Business advisory, bookkeeping, tax services, and financial education for small business owners.
-</p>
-
-<p>
-(936) 283-4424  
-<br>
-contact@infracoreadvisorygroup.com  
-<br>
-1111 FM 1485 STE 4031, Conroe TX
-</p>
-
-</div>
-
-</footer>
+    <div class="container footer-bottom">
+      © 2015 InfraCore Advisory Group. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
